@@ -1,6 +1,7 @@
 # Trackgenix
 
 ## Description
+- Trackgenix is a web system which facilitates the registration of hours worked by each employee in each project and work team.
 
 ## How to open
 1. Access to the folder "Semana-01"
