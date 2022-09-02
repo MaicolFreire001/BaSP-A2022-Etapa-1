@@ -1,0 +1,9 @@
+Link: https://www.figma.com/file/m90Zv0Q9fTqU4m0HPQ25AK/UI-kit-RR-(BaSP)---grupo-a?node-id=41%3A5
+
+Flow: Flow Landing Desktop - Freire e Ibaceta
+
+Mis vistas: 
+-Landing Desktop - Freire
+-Landing Desktop Variantes  - Freire
+-Variantes - Freire
+-Overlay - Sent success - Freire
