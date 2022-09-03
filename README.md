@@ -12,7 +12,7 @@
 Created the workflow of the landing page in Figma.
 
 ### Week 02
-Created the READEME.md and index.html files and starting to work in the layout of the page in HTML.
+Created the READEME.md and index.html files and started to work in the layout of the page in HTML.
 
 ### Week 03
 Created and applied a CCS style file to the landing page.

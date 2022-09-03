@@ -51,14 +51,14 @@ h2{
 .sb-info ul{
     padding: 10px 0;
     list-style: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 .sb-info li{
     padding: 0;
-    text-anchor: start;
 }
+
 .sb-info img{
-    vertical-align: text-bottom;
+    float: inline-start;
+    vertical-align: text-top;
     height: 30px;
-    width: 30px;
 }
