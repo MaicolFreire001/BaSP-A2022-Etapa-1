@@ -168,7 +168,7 @@ h2{
     width: 260px;
     font-size: 20px;
 }
-#sidebar li:nth-child(1), li:nth-child(2) {
+#sidebar li:nth-child(1), #sidebar li:nth-child(2) {
     border-bottom: #373867 solid 1px;
 }
 #sidebar a{
@@ -246,5 +246,39 @@ img:hover[alt*="LinkedIn"]{
     margin-bottom: 15px;
     display: inline-block;
     width: 330px;
+}
+#features{
+    font-size: 14px;
+    font-weight: bold;
+}
+#features h2{
+    margin-bottom: 20px;
+}
+#features > div{
+    border-bottom: #373867 solid 1px;
+}
+.feature-div{
+    display: inline-block;
+    width: 545px;
+}
+.feature-div img{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.feature-div button{
+    width: 70px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.feature-div p, .feature-div span, .feature-div button{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.feature-div p{
+    width: 500px;
 }
 
