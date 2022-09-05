@@ -296,7 +296,6 @@ img:hover[alt*="LinkedIn"]{
     width: 500px;
     height: 40px;
     margin-bottom: 30px;
-    
 }
 #contact input{
     border: #373867 solid 0.5px;
@@ -360,11 +359,57 @@ img:hover[alt*="LinkedIn"]{
     vertical-align: middle;
 }
 #history{
+    margin-top: 30px;
+    border-bottom: #373867 solid 1px;
+    padding-bottom: 65px;
+}
+#history h2{
+    margin-bottom: 60px;
 }
 #history span{
     font-weight: bold;
 }
-#history > div{
-    margin-top: 30px;
+#history img[src*="history-image-1"]{
+    width: 330px;
+    height: 220px;
+    display: inline-block;
+}
+#history img[src*="history-image-2"]{
+    width: 380px;
+    display: inline-block;
+    height: 240px;
+    margin-bottom: -90px;
+}
+#first-history-div p{
+    width: 740px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+#second-history-div span{
+    display: block;
+    margin-bottom: 20px;
+}
+#second-history-div p{
+    vertical-align: top;
+}
+#second-history-div img, #second-history-div p{
+    display: inline-block;
+}
+#first-paragraph{
+    width: 695px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+#second-paragraph{
+    width: 280px;
+}
+#last-paragraph{
+    width: 505px;
+    margin-top: 15px;
+}
+#frst-scnd-div{
+    width: 295px;
+    vertical-align: top;
+    display: inline-block;
 }
 
