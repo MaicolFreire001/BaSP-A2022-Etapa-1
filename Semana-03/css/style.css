@@ -178,26 +178,24 @@ h2{
 }
 header{
     border-bottom: #FF3E1D solid 2px;
+    height: 50px;
+    margin-bottom: 50px;
 }
 .bold{
     font-weight: bold;
 }
-header{
-    height: 50px;
-    margin-bottom: 50px;
-}
 #header-text{
     display: inline-block;
     margin-top: 30px;
-    margin-right: 650px;
+    margin-right: 635px;
     font-size: 14px;
 }
 #header-icons{
     display: inline-block;
 }
 header img, footer img{
-    height: 26px;
-    width: 26px;
+    height: 30px;
+    width: 30px;
     vertical-align: bottom;
 }
 img:hover[alt*="Facebook"]{
@@ -436,5 +434,12 @@ img:hover[alt*="LinkedIn"]{
     width: 200px;
     padding-left: 130px;
     margin: 40px 0 30px 0;
-
 }
+#main-footer div{
+    text-align: center;
+    margin: 20px 0;
+}
+#main-footer img{
+    margin-right: 0px;
+}
+
