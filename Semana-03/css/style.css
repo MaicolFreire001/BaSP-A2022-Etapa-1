@@ -412,4 +412,29 @@ img:hover[alt*="LinkedIn"]{
     vertical-align: top;
     display: inline-block;
 }
+#lists{
+    border-bottom: #373867 solid 1px;
+}
+#lists ol{
+    list-style-type: decimal;
+    line-height: 18px;
+    margin-top: 15px;
+}
+#lists a{
+    text-decoration: none;
+    color: #373867;
+}
+#lists a:hover{
+    color: #171877;
+}
+#lists span{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.list-div{
+    display: inline-block;
+    width: 200px;
+    padding-left: 130px;
+    margin: 40px 0 30px 0;
 
+}
