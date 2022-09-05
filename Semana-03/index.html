@@ -169,29 +169,33 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div>
+            <section id="contact">
+                <div id="contact-main-div">
                     <h2>Get some info</h2>
                     <form>
                         <div>
-                            <label for="full-name">
-                                <span>Full name:</span>
-                            </label>
-                            <input id="full-name" type="text" name="full-name">
+                            <div>
+                                <label for="full-name">
+                                    <span>Full name:</span>
+                                </label>
+                                <input id="full-name" placeholder="Full name" type="text" name="full-name">
+                            </div>
+                            <div>
+                                <label for="email">
+                                    <span>Email:</span>
+                                </label>
+                                <input id="email" placeholder="Email" type="email" name="email">
+                            </div>
+                            <div>
+                                <label for="message">
+                                    <span>Message:</span>
+                                </label>
+                                <textarea id="message" placeholder="Message" type="text" name="message"></textarea>
+                            </div>
+                            <input class="btn-form" type="reset" value="Reset">
+                            <input class="btn-form" type="submit" value="Send">
                         </div>
-                        <div>
-                            <label for="email">
-                                <span>Email:</span>
-                            </label>
-                            <input id="email" type="email" name="email">
-                        </div>
-                        <div>
-                            <label for="message">
-                                <span>Message:</span>
-                            </label>
-                            <input id="message" type="text" name="message">
-                        </div>
-                        <div>
+                        <div id="contact-area-div">
                             <span>Contact area:</span>
                             <div>   
                                 <input id="human-resources" type="radio" name="contact-area" value="human-resources">
@@ -201,13 +205,11 @@
                                 <input id="marketing" type="radio" name="contact-area" value="marketing">
                                 <label for="marketing">Marketing</label>
                             </div>
-                            <input type="reset" value="Reset">
-                            <input type="submit" value="Send">
                         </div>
                     </form>
                 </div>
             </section>
-            <section>
+            <section id="history">
                 <div>
                     <h2>History of the business</h2>
                     <span>The foundation</span>
