@@ -1,6 +1,6 @@
 html{
-    height: 900px;
     width: 1440px;
+    height: 900px;
 }
 body{
     width: 1440px;
@@ -14,7 +14,7 @@ body{
 main{
     border-bottom: #373867 solid 1px;
     padding-bottom: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 #sidebar{
     width: 300px;
@@ -26,7 +26,7 @@ main{
     position: fixed;
 }
 .container{
-    width: 77%; 
+    width: 1090px; 
     box-sizing: border-box;
     background-color: #fff;
     color: #373867;
@@ -151,9 +151,9 @@ h2{
 .info-text-div{
     display: inline-block;
     width: 210px;
-    vertical-align: super;
     box-sizing: border-box;
-
+    vertical-align: middle;
+    margin-left: 5px;
 }
 #sidebar ul{
     display: inline;
@@ -176,6 +176,13 @@ h2{
     text-decoration: none;
     color:#FF3E1D;
 }
+#sidebar i{
+    margin-bottom: 10px;
+    
+}
+#sidebar i{
+    color: #373867;
+}
 header{
     border-bottom: #FF3E1D solid 2px;
     height: 50px;
@@ -187,31 +194,17 @@ header{
 #header-text{
     display: inline-block;
     margin-top: 30px;
-    margin-right: 635px;
+    margin-right: 665px;
     font-size: 14px;
 }
 #header-icons{
     display: inline-block;
 }
-header img, footer img{
-    height: 30px;
-    width: 30px;
-    vertical-align: bottom;
+.container i{
+    color: #5D5D5D;
 }
-img:hover[alt*="Facebook"]{
-    content: url(../assets/facebook-image-hover.png);
-}
-img:hover[alt*="Instagram"]{
-    content: url(../assets/instagram-image-hover.png);
-}
-img:hover[alt*="Twitter"]{
-    content: url(../assets/twitter-image-hover.png);
-}
-img:hover[alt*="GitHub"]{
-    content: url(../assets/github-image-hover.png);
-}
-img:hover[alt*="LinkedIn"]{
-    content: url(../assets/linkedin-image-hover.png);
+.container i:hover{
+    color: #FF3E1D;
 }
 #reasons{
     border-bottom: #373867 solid 1px;
@@ -221,11 +214,14 @@ img:hover[alt*="LinkedIn"]{
 #reasons h2{
     margin-bottom: 20px;
 }
+#reasons span{
+    font-weight: bold;
+}
 .reason-div{
     display: inline-block;
     width: 540px;
     font-size: 14px;
-    font-weight: bold;
+    margin-top: 15px;
 }
 .reason-div img{
     height: 120px;
@@ -235,7 +231,7 @@ img:hover[alt*="LinkedIn"]{
     vertical-align: top;
     display: inline-block;
     width: 360px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 .reason-inside-div span{
     margin-bottom: 15px;
@@ -253,7 +249,7 @@ img:hover[alt*="LinkedIn"]{
 }
 .feature-div{
     display: inline-block;
-    width: 545px;
+    width: 540px;
 }
 .feature-div img{
     display: inline-block;
@@ -276,6 +272,7 @@ img:hover[alt*="LinkedIn"]{
 #contact{
     font-size: 14px;
     font-weight: bold;
+    margin-top: 30px;
 }
 #contact-main-div{
     border-bottom: #373867 solid 1px;
@@ -284,10 +281,14 @@ img:hover[alt*="LinkedIn"]{
     margin-left: 20px;
     margin-top: 25px;
 }
+·
 #contact label{
     display: inline-block;
     width: 500px;
     margin-bottom: 10px;
+}
+#contact-inputs-div input{
+    margin-top: 10px;
 }
 #contact input[type*="text"], #contact input[type*="email"]{
     display: inline-block;
@@ -308,6 +309,7 @@ img:hover[alt*="LinkedIn"]{
     display: inline-block;
     width: 900px;
     height: 200px;
+    margin-top: 10px;
     border-radius: 5px;
 }
 #contact form > div{
@@ -339,7 +341,6 @@ img:hover[alt*="LinkedIn"]{
     font-size: 12px;
 }
 #contact-area-div{
-    vertical-align: middle;
     margin-left: 260px;
 }
 #contact-area-div label{
@@ -381,7 +382,7 @@ img:hover[alt*="LinkedIn"]{
 #first-history-div p{
     width: 740px;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 #second-history-div span{
     display: block;
