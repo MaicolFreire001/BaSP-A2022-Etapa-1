@@ -5,91 +5,11 @@ html{
 body{
     width: 1440px;
     height: 900px;
-    background-color: #fff;
-    color: #373867;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
     margin: 0;
-}
-main{
-    border-bottom: #373867 solid 1px;
-    padding-bottom: 50px;
-    margin-bottom: 30px;
-}
-#sidebar{
-    width: 300px;
-    height: 100%;
-    box-sizing: border-box;
-    background-color: #AACE9B;
-    color: #373867;
-    display: inline-block;
-    position: fixed;
-}
-.container{
-    width: 1090px; 
-    box-sizing: border-box;
     background-color: #fff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
     color: #373867;
-    display: inline-block;
-    margin-left: 340px;
-}
-.main-title{
-    width: 700px;
-    display: inline;
-    font-size: 40px;
-    font-weight: bold;
-}
-#main-div{
-    display: inline-block;
-    width: 720px;
-    vertical-align: top;
-}
-#title-span{
-    display: block;
-    width: 680px;
-}
-#subtitle-span{
-    font-size: 20px;
-    display: inline-block;
-    width: 340px;
-    margin: 50px 0;
-}
-#main-text-div{
-    display: inline-block;
-    width: 720px;
-    vertical-align: top;
-}
-#main-image-div{
-    display: inline-block;
-}
-main img{
-    width: 360px;
-    height: 340px;
-}
-#web-info-span{
-    display: inline-block;
-    width: 630px;
-    margin-bottom: 50px;
-}
-main button{
-    display: block;
-    width: 140px;
-    height: 35px;
-}
-button{
-    border: #FF3E1D solid 1px;
-    border-radius: 3px;
-    display: inline-block;
-    font-weight: bold;
-    color:#FF3E1D;
-}
-button:hover{
-    border: #FF3E1D solid 1px;
-    border-radius: 3px;
-    display: inline-block;
-    font-weight: bold;
-    color:#373867;
-    background-color: #FF3E1D;
 }
 h2{
     font-size: 30px;
@@ -99,6 +19,49 @@ h2{
     text-decoration-skip-ink: none;
     text-underline-offset: 8px;
 }
+button{
+    display: inline-block;
+    border: #FF3E1D solid 1px;
+    border-radius: 3px;
+    font-weight: bold;
+    color:#FF3E1D;
+}
+button:hover{
+    display: inline-block;
+    background-color: #FF3E1D;
+    border: #FF3E1D solid 1px;
+    border-radius: 3px;
+    font-weight: bold;
+    color:#373867;
+}
+header{
+    height: 50px;
+    margin-bottom: 50px;
+    border-bottom: #FF3E1D solid 2px;
+}
+main{
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    border-bottom: #373867 solid 1px;
+}
+main img{
+    width: 360px;
+    height: 340px;
+}
+main button{
+    display: block;
+    width: 140px;
+    height: 35px;
+}
+#sidebar{
+    position: fixed;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100%;
+    background-color: #AACE9B;
+    color: #373867;
+}
 #sidebar span{
     font-size: 30px;
     font-weight: bold;
@@ -107,58 +70,22 @@ h2{
     text-decoration-skip-ink: none;
     text-underline-offset: 8px;
 }
-#sb-menu{
+#sidebar-menu{
+    width: 260px;
     margin-top: 30px;
     margin-left: 20px;
     padding-bottom: 60px;
-    width: 260px;
     border-bottom: #373867 solid 1px;
 }
-#sb-menu span{
+#sidebar-menu span{
+    display: inline-block;
     margin-bottom: 30px;
-    display: inline-block;
 
-}
-#sb-info{
-    margin-left: 20px;
-    margin-top: 30px;
-    width: 260px;
-    text-align: left;
-    font-weight: bold;
-}
-#sb-info p{
-    width: 260px;
-    margin-bottom: 40px;
-    font-weight: normal;
-}
-#sb-info span{
-    margin: 30px 0px;
-    display: inline-block;
-}
-#sb-info img{
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-}
-.icon-text-container{
-    border-bottom: #373867 solid 1px;
-    display: inline-block;
-    margin: 6px auto;
-    padding: 0px 8px 5px 0px;
-    box-sizing: border-box;
-
-}
-.info-text-div{
-    display: inline-block;
-    width: 210px;
-    box-sizing: border-box;
-    vertical-align: middle;
-    margin-left: 5px;
 }
 #sidebar ul{
     display: inline;
-    border-bottom: #373867 solid 1px;
     padding-bottom: 30px;
+    border-bottom: #373867 solid 1px;
     line-height: 45px;
 }
 #sidebar li{
@@ -178,27 +105,52 @@ h2{
 }
 #sidebar i{
     margin-bottom: 10px;
-    
 }
 #sidebar i{
     color: #373867;
 }
-header{
-    border-bottom: #FF3E1D solid 2px;
-    height: 50px;
-    margin-bottom: 50px;
-}
-.bold{
+#sidebar-info{
+    width: 260px;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left;
     font-weight: bold;
 }
-#header-text{
+#sidebar-info span{
     display: inline-block;
-    margin-top: 30px;
-    margin-right: 665px;
-    font-size: 14px;
+    margin: 30px 0px;
 }
-#header-icons{
+#sidebar-info p{
+    width: 260px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+#sidebar-info img{
     display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.sidebar-icon-text-container{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 6px auto;
+    padding: 0px 8px 5px 0px;
+    border-bottom: #373867 solid 1px;
+}
+.sidebar-info-text-div{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 210px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.container{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 1090px; 
+    margin-left: 340px;
+    background-color: #fff;
+    color: #373867;
 }
 .container i{
     color: #5D5D5D;
@@ -206,46 +158,89 @@ header{
 .container i:hover{
     color: #FF3E1D;
 }
+#header-text{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 665px;
+    font-size: 14px;
+}
+#header-text span{
+    font-weight: bold;
+}
+#header-icons{
+    display: inline-block;
+}
+#main-div{
+    display: inline-block;
+    width: 720px;
+    vertical-align: top;
+}
+.main-title{
+    display: inline;
+    width: 700px;
+    font-size: 40px;
+    font-weight: bold;
+}
+#main-text-div{
+    display: inline-block;
+    width: 720px;
+    vertical-align: top;
+}
+#title-span{
+    display: block;
+    width: 680px;
+}
+#subtitle-span{
+    display: inline-block;
+    width: 340px;
+    margin: 50px 0;
+    font-size: 20px;
+}
+#web-info-span{
+    display: inline-block;
+    width: 630px;
+    margin-bottom: 50px;
+}
+#main-image-div{
+    display: inline-block;
+}
 #reasons{
-    border-bottom: #373867 solid 1px;
-    padding-bottom: 20px;
     margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: #373867 solid 1px;
 }
 #reasons h2{
     margin-bottom: 20px;
 }
-#reasons span{
-    font-weight: bold;
-}
 .reason-div{
     display: inline-block;
     width: 540px;
-    font-size: 14px;
     margin-top: 15px;
+    font-size: 14px;
 }
 .reason-div img{
-    height: 120px;
     width: 120px;
+    height: 120px;
 }
 .reason-inside-div{
-    vertical-align: top;
     display: inline-block;
     width: 360px;
     margin-top: 0px;
+    vertical-align: top;
 }
 .reason-inside-div span{
-    margin-bottom: 15px;
     display: inline-block;
     width: 330px;
+    margin-bottom: 15px;
 }
-#features{
+#reasons span{
     font-weight: bold;
-}
-#features h2{
-    margin-bottom: 20px;
 }
 #features > div{
     border-bottom: #373867 solid 1px;
+}
+#features h2{
+    margin-bottom: 20px;
 }
 .feature-div{
     display: inline-block;
@@ -257,53 +252,55 @@ header{
     height: 500px;
     margin-bottom: 30px;
 }
-.feature-div button{
-    width: 70px;
-    height: 30px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-.feature-div p, .feature-div span, .feature-div button{
-    margin-top: 30px;
+#features span{
+    font-weight: bold;
 }
 .feature-div p{
     width: 500px;
 }
+.feature-div button{
+    width: 70px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.feature-div p, .feature-div span, .feature-div button{
+    margin-top: 30px;
+}
 #contact{
+    margin-top: 30px;
     font-size: 14px;
     font-weight: bold;
-    margin-top: 30px;
 }
 #contact-main-div{
     border-bottom: #373867 solid 1px;
 }
 #contact form{
-    margin-left: 20px;
     margin-top: 25px;
+    margin-left: 20px;
 }
-·
+#contact form > div{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+#contact-inputs-div input{
+    margin-top: 10px;
+}
 #contact label{
     display: inline-block;
     width: 500px;
     margin-bottom: 10px;
 }
-#contact-inputs-div input{
-    margin-top: 10px;
+#contact input{
+    border: #373867 solid 0.5px;
+    border-radius: 5px;
 }
 #contact input[type*="text"], #contact input[type*="email"]{
     display: inline-block;
     width: 500px;
     height: 40px;
     margin-bottom: 30px;
-}
-#contact input{
-    border: #373867 solid 0.5px;
-    border-radius: 5px;
-}
-#contact input[type*="radio"]{
-    width: 18px;
-    height: 18px;
-    accent-color: #373867;
 }
 #contact textarea{
     display: inline-block;
@@ -312,18 +309,13 @@ header{
     margin-top: 10px;
     border-radius: 5px;
 }
-#contact form > div{
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;
-}
 #contact input[type="submit"]{
-    background-color: #AACE9B;
     width: 100px;
+    background-color: #AACE9B;
 }
 #contact input[type="reset"]{
-    background-color: #F13312;
     width: 70px;
+    background-color: #F13312;
 }
 #contact input[type="submit"]:hover{
     background-color: #4EB125;
@@ -332,61 +324,58 @@ header{
     background-color: #FF2500;
 }
 .btn-form{
+    height: 35px;
     margin: 40px 0 15px 15px;
     border: #373867 solid 0.5px;
-    color: #373867;
     border-radius: 5px;
-    height: 35px;
-    font-weight: bold;
     font-size: 12px;
+    font-weight: bold;
+    color: #373867;
 }
 #contact-area-div{
     margin-left: 260px;
 }
-#contact-area-div label{
-    width: 255px;
-    vertical-align: sub;
-}
-#contact-area-div label{
-    margin-bottom: 15px;
-}
 #contact-area-div div{
     margin-top: 10px;
+}
+#contact input[type*="radio"]{
+    width: 18px;
+    height: 18px;
+    accent-color: #373867;
 }
 #contact-area-div input{
     margin-left: 0;
     vertical-align: middle;
 }
+#contact-area-div label{
+    width: 255px;
+    margin-bottom: 15px;
+    vertical-align: sub;
+}
 #history{
     margin-top: 30px;
-    border-bottom: #373867 solid 1px;
     padding-bottom: 65px;
+    border-bottom: #373867 solid 1px;
 }
 #history h2{
     margin-bottom: 60px;
-}
-#history span{
-    font-weight: bold;
-}
-#history img[src*="history-image-1"]{
-    width: 330px;
-    height: 220px;
-    display: inline-block;
-}
-#history img[src*="history-image-2"]{
-    width: 380px;
-    display: inline-block;
-    height: 240px;
-    margin-bottom: -90px;
 }
 #first-history-div p{
     width: 740px;
     margin-top: 20px;
     margin-bottom: 40px;
 }
+#history span{
+    font-weight: bold;
+}
 #second-history-div span{
     display: block;
     margin-bottom: 20px;
+}
+#history img[src*="history-image-1"]{
+    display: inline-block;
+    width: 330px;
+    height: 220px;
 }
 #second-history-div p{
     vertical-align: top;
@@ -394,30 +383,46 @@ header{
 #second-history-div img, #second-history-div p{
     display: inline-block;
 }
+#first-second-div{
+    display: inline-block;
+    width: 295px;
+    vertical-align: top;
+}
 #first-paragraph{
     width: 695px;
-    margin-bottom: 25px;
     margin-top: 5px;
+    margin-bottom: 25px;
 }
 #second-paragraph{
     width: 280px;
+}
+#history img[src*="history-image-2"]{
+    display: inline-block;
+    width: 380px;
+    height: 240px;
+    margin-bottom: -90px;
 }
 #last-paragraph{
     width: 505px;
     margin-top: 15px;
 }
-#frst-scnd-div{
-    width: 295px;
-    vertical-align: top;
-    display: inline-block;
-}
 #lists{
     border-bottom: #373867 solid 1px;
 }
+.list-div{
+    display: inline-block;
+    width: 200px;
+    margin: 40px 0 30px 0;
+    padding-left: 130px;
+}
+#lists span{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
 #lists ol{
+    margin-top: 15px;
     list-style-type: decimal;
     line-height: 18px;
-    margin-top: 15px;
 }
 #lists a{
     text-decoration: none;
@@ -426,19 +431,9 @@ header{
 #lists a:hover{
     color: #171877;
 }
-#lists span{
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.list-div{
-    display: inline-block;
-    width: 200px;
-    padding-left: 130px;
-    margin: 40px 0 30px 0;
-}
 #main-footer div{
-    text-align: center;
     margin: 20px 0;
+    text-align: center;
 }
 #main-footer img{
     margin-right: 0px;
