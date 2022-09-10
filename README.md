@@ -17,4 +17,7 @@ Created the READEME.md and index.html files and started to work in the layout of
 ### Week 03
 Created and applied a CCS style file to the landing page.
 
+### Week 04
+Made the .css files modular, used flexbox for the page layout and made the landing page resposive for mobile, tablet and desktop.
+ 
 _By Maicol Freire_

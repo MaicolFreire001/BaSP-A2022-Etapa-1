@@ -4,31 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/641430c6e2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
         <title>Trackgenix - GigaTech Software Solutions SA</title>
     </head>
     <body>
-        <header>
-            <p>
-                <b>Trackgenix</b> by GigaTech Software Solutions SA
-                <a href="https://facebook.com" target="_blank"><img src="assets/facebook-image.png" alt="Facebook page"></a> 
-                <a href="https://instagram.com" target="_blank"><img src="assets/instagram-image.png" alt="Instagram page"></a> 
-                <a href="https://twitter.com" target="_blank"><img src="assets/twitter-image.png" alt="Twitter page"></a> 
-                <a href="https://github.com" target="_blank"><img src="assets/github-image.png" alt="GitHub page"></a> 
-                <a href="https://linkedin.com" target="_blank"><img src="assets/linkedin-image.png" alt="LinkedIn page"></a> 
-            </p>
-        </header>
-
-        <aside>
-            <div>
-                <h2>Menu</h2>
+        <aside id="sidebar">
+            <div id="sidebar-menu">
+                <span>Menu</span>
                 <ul>
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="singup.html">SignUp</a></li>
                     <li><a href="login.html">LogIn</a></li>
                 </ul>
             </div>
-            <div>
-                <h2>Get in touch</h2>
+            <div id="sidebar-info">
+                <span>Get in touch</span>
                 <p>
                     Explanation here of the correspondent component. We left this with a 
                     random text for the moment. This is just an example. Don't take this 
@@ -36,271 +28,274 @@
                     left this with a random text for the moment. This is just an example.
                     Don't take this text seriously.
                 </p>
-                <p>
-                    <img src="assets/icon-email.png" alt="Email icon"> infotrackgenix@something.idk
-                </p>
-                <p>
-                    <img src="assets/icon-adress.png" alt="Adress icon"> 1234 Somewhere Road #8254 Nashville, TN 00000-0000
-                </p>
-                <p>
-                    <img src="assets/icon-phone.png" alt="Phone icon"> (000) 000-0000
-                </p>
+                <div class="sidebar-icon-text-container">
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                    <div class="sidebar-info-text-div">
+                        infotrackgenix@something.idk
+                    </div>
+                </div>
+                <div class="sidebar-icon-text-container">
+                    <i class="fa-solid fa-house fa-xl"></i>
+                    <div class="sidebar-info-text-div">
+                        1234 Somewhere Road #8254 Nashville, TN 00000-0000
+                    </div>
+                </div>
+                <div class="sidebar-icon-text-container">
+                    <i class="fa-solid fa-phone fa-xl fa-flip-horizontal"></i>
+                    <div class="sidebar-info-text-div">
+                        (000) 000-0000
+                    </div>
+                </div>
             </div>
         </aside>
-        <main>
-            <div>
-                <h1>Hi, I'm Trackgenix by GigaTech Software Solutions SA</h1>
-                <h3>A practical and easy to use system</h3>
-                <img src="assets/title-image.png" alt="Two hands using a laptop">
-                <p>
-                    Trackgenix is a web system which facilitates the registration of hours worked by each employee in each project and work team.
-                </p>
-                <button>LEARN MORE</button>
-            </div>
-            <div>
-                <h2>Why you should use me</h2>
-                <div>
-                    <p>
-                        <img src="assets/reason-1.png" alt="Reason 1 image">
-                        <b>Productivity booster</b>
-                    </p>
-                    <p>
-                        Explanation here of the correspondent reason. 
-                        We left this with a random text for the moment. This is just an example. 
-                        Don't take this text seriously
-                    </p>
+        <div class="container">
+            <header>
+                <div id="header-text">
+                    <span>Trackgenix</span> by GigaTech Software Solutions SA
                 </div>
-                <div>
-                    <p>
-                        <img src="assets/reason-2.png" alt="Reason 2 image">
-                        <b>Work traceability</b>
-                    </p>
-                    <p>
-                        Explanation here of the correspondent reason. 
-                        We left this with a random text for the moment. This is just an example. 
-                        Don't take this text seriously
-                    </p>
+                <div id="header-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a> 
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a> 
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a> 
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a> 
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a> 
                 </div>
-                <div>
-                    <p>
-                        <img src="assets/reason-3.png" alt="Reason 3 image">
-                        <b>Leadership and team management</b>
-                    </p>
-                    <p>
-                        Explanation here of the correspondent reason. 
-                        We left this with a random text for the moment. This is just an example. 
-                        Don't take this text seriously
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <img src="assets/reason-4.png" alt="Reason 4 image">
-                        <b>Decision making</b>
-                    </p>
-                    <p>
-                        Explanation here of the correspondent reason. 
-                        We left this with a random text for the moment. This is just an example. 
-                        Don't take this text seriously
-                    </p>
-                </div>
-            </div>
-            <div>
-                <h2>Features</h2>
-                <div>
-                    <p>
-                        <img src="assets/feature-1.png" alt="A clock">
-                    </p>
-                    <p>
-                        <b>Hours Log</b>
-                    </p>
-                    <p>
-                        Explanation here of the correspondent reason. 
-                        We left this with a random text for the moment. This is just an example. 
-                        Don't take this text seriously
-                    </p>
-                    <button>MORE</button>
-                </div>
-
-                <div>
-                    <p>
-                        <img src="assets/feature-2.png" alt="A bunch of notebooks">
-                    </p>
-                    <p>
-                        <b>Reports</b>
-                    </p>
-                    <p>
-                        Explanation here of the correspondent reason. 
-                        We left this with a random text for the moment. This is just an example. 
-                        Don't take this text seriously
-                    </p>
-                    <button>MORE</button>
-                </div>
-
-                <div>
-                    <p>
-                        <img src="assets/feature-3.png" alt="A board with a lot of sticky notes">
-                    </p>
-                    <p>
-                        <b>Resource Management</b>
-                    </p>
-                    <p>
-                        Explanation here of the correspondent reason. 
-                        We left this with a random text for the moment. This is just an example. 
-                        Don't take this text seriously
-                    </p>
-                    <button>MORE</button>
-                </div>
-
-                <div>
-                    <p>
-                        <img src="assets/feature-4.png" alt="A meeting with some businessmans">
-                    </p>
-                    <p>
-                        <b>Multiple Roles</b>
-                    </p>
-                    <p>
-                        Explanation here of the correspondent reason. 
-                        We left this with a random text for the moment. This is just an example. 
-                        Don't take this text seriously
-                    </p>
-                    <button>MORE</button>
-                </div>
-            </div>
-            <div>
-                <h2>Get some info</h2>
-                <form>
-                    <div>
-                        <p>
-                            <label for="full-name">
-                                <b>Full name:</b>
-                            </label>
-                        </p>
-                        <input type="text" name="full-name">
+            </header>
+            <main>
+                <div id="main-div">
+                    <h1 class="main-title">Hi, I'm Trackgenix <span id="title-span">by GigaTech Software Solutions SA</span></h1>
+                    <div id="main-text-div">
+                        <span id="subtitle-span">A practical and easy to use system</span> 
+                        <span id="web-info-span">
+                            Trackgenix is a web system which facilitates the registration of hours worked by each employee in each project and work team.
+                        </span>
+                        <button>LEARN MORE</button>
                     </div>
-                    <div>
-                        <p>
-                            <label for="email">
-                                <b>Email:</b>
-                            </label>
-                        </p>
-                        <input type="email" name="email">
+                </div>
+                <div id="main-image-div">
+                    <img src="assets/title-image.png" alt="Two hands using a laptop">
+                </div>
+            </main>
+            <section id="reasons">
+                <div>
+                    <h2>Why you should use me</h2>
+                    <div class="reason-div">
+                        <img src="assets/productivity-booster.png" alt="Productivity booster image">
+                        <div class="reason-inside-div">
+                            <span>Productivity booster</span>
+                            Explanation here of the correspondent reason. 
+                            We left this with a random text for the moment. This is just an example. 
+                            Don't take this text seriously
+                        </div>
                     </div>
-                    <div>
-                        <p>
-                            <label for="message">
-                                <b>Message:</b>
-                            </label>
-                        </p>
-                        <input type="text" name="message">
+                    <div class="reason-div">
+                        <img src="assets/work-traceability.png" alt="Work traceability image">
+                        <div class="reason-inside-div">
+                            <span>Work traceability</span>
+                            Explanation here of the correspondent reason. 
+                            We left this with a random text for the moment. This is just an example. 
+                            Don't take this text seriously
+                        </div>
                     </div>
-                    <div>
-                        <p>
-                            <b>Contact area:</b>
-                        </p>
-                        <p>
-                                <p>
-                                    <input type="radio" name="contact-area" value="human-resources">
-                                    <label for="human-resources">Human Resources</label>
-                                </p>
-                                <p>
-                                    <input type="radio" name="contact-area" value="systems">
-                                    <label for="systems">Systems</label>
-                                </p>
-                                <p>
-                                    <input type="radio" name="contact-area" value="marketing">
-                                    <label for="marketing">Marketing</label>
-                                </p>
-                        </p>
-                        <input type="reset" value="Reset">
-                        <input type="submit" value="Send">
+                    <div class="reason-div">
+                        <img src="assets/leadership.png" alt="Leadership and team management image">
+                        <div class="reason-inside-div">
+                            <span>Leadership and team management</span>
+                            Explanation here of the correspondent reason. 
+                            We left this with a random text for the moment. This is just an example. 
+                            Don't take this text seriously
+                        </div>
                     </div>
-                </form>
-            </div>
-            <div>
-                <h2>History of the business</h2>
-                <p>
-                    The foundation
-                </p>
-                <p>
-                    Explanation here of the correspondent section. We left this with a random text for the moment. 
-                    This is just an example. Don't take this text seriously. Explanation here of the correspondent reason. 
-                    We left this with a random text for the moment. This is just an example. Don't take this text seriously. 
-                    Explanation here of the correspondent reason. We left this with a random text for the moment. This is just an example. 
-                    Don't take this text seriously.
-                </p>
-                <p>
-                    Something else
-                </p>
-                <p>
-                    <img src="assets/history-image-1.png" alt="People explaining something to another">
-                    Explanation here of the correspondent section. We left this with a random text for the moment. 
-                    This is just an example. Don't take this text seriously. Explanation here of the correspondent reason. 
-                    We left this with a random text for the moment. This is just an example. Don't take this text seriously. 
-                    Explanation here of the correspondent reason. We left this with a random text for the moment. This is just an example. 
-                    Don't take this text seriously.
-                </p>
-                <p>
-                    Explanation here of the correspondent section. We left this with a random text for the moment. 
-                    This is just an example. Don't take this text seriously. Explanation here of the correspondent reason. 
-                    We left this with a random text for the moment. This is just an example. Don't take this text seriously. 
-                    Explanation here of the correspondent reason. We left this with a random text for the moment. This is just an example. 
-                    Don't take this text seriously.
-                    <img src="assets/history-image-2.png" alt="Two hands holding a lightbulb">
-                </p>
-                <p>
-                    Explanation here of the correspondent section. We left this with a random text for the moment. 
-                    This is just an example. Don't take this text seriously. 
-                </p>
-            </div>
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Our products</th>
-                            <th>Bussines</th>
-                            <th>Support</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <ol>
-                                    <li><a href="features.html">Features</a></li>
-                                    <li><a href="downloads.html">Downloads</a></li>
-                                    <li><a href="integrations.html">Integrations</a></li>
-                                    <li><a href="add-ons.html">Add-ons</a></li>
-                                </ol>
-                            </td>
-                            <td>
-                                <ol>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li><a href="clients.html">Clients</a></li>
-                                    <li><a href="resources.html">Resources</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                </ol>
-                            </td>
-                            <td>
-                                <ol>
-                                    <li><a href="help.html">Help</a></li>
-                                    <li><a href="tutorials.html">Tutorials</a></li>
-                                    <li><a href="api.html">API</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ol>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </main>
-        <footer>
-            <p>
-                Copyright &copy; 2022 GigaTech Software Solutions SA. All rights reserved.
-            </p> 
-            <a href="https://facebook.com" target="_blank"><img src="assets/facebook-image.png" alt="Facebook page"></a> 
-            <a href="https://instagram.com" target="_blank"><img src="assets/instagram-image.png" alt="Instagram page"></a> 
-            <a href="https://twitter.com" target="_blank"><img src="assets/twitter-image.png" alt="Twitter page"></a> 
-            <a href="https://github.com" target="_blank"><img src="assets/github-image.png" alt="GitHub page"></a> 
-            <a href="https://linkedin.com" target="_blank"><img src="assets/linkedin-image.png" alt="LinkedIn page"></a>
-        </footer>
+                    <div class="reason-div">
+                        <img src="assets/decision-making.png" alt="Decision making image">
+                        <div class="reason-inside-div">
+                            <span>Decision making</span>
+                            Explanation here of the correspondent reason. 
+                            We left this with a random text for the moment. This is just an example. 
+                            Don't take this text seriously
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="features">
+                <div>
+                    <h2>Features</h2>
+                    <div class="feature-div">
+                        <div>
+                            <img src="assets/hours-log.png" alt="A clock">
+                        </div>
+                        <span>Hours Log</span>
+                        <p>
+                            Explanation here of the correspondent reason. 
+                            We left this with a random text for the moment. This is just an example. 
+                            Don't take this text seriously
+                        </p>
+                        <button>MORE</button>
+                    </div>
+                    <div class="feature-div">
+                        <div>
+                            <img src="assets/reports.png" alt="A bunch of notebooks">
+                        </div>
+                        <span>Reports</span>
+                        <p>
+                            Explanation here of the correspondent reason. 
+                            We left this with a random text for the moment. This is just an example. 
+                            Don't take this text seriously
+                        </p>
+                        <button>MORE</button>
+                    </div>
+                    <div class="feature-div">
+                        <div>
+                            <img src="assets/resource-management.png" alt="A board with a lot of sticky notes">
+                        </div>
+                        <span>Resource Management</span>
+                        <p>
+                            Explanation here of the correspondent reason. 
+                            We left this with a random text for the moment. This is just an example. 
+                            Don't take this text seriously
+                        </p>
+                        <button>MORE</button>
+                    </div>
+                    <div class="feature-div">
+                        <div>
+                            <img src="assets/multiple-roles.png" alt="A meeting with some businessmans">
+                        </div>
+                        <span>Multiple Roles</span>
+                        <p>
+                            Explanation here of the correspondent reason. 
+                            We left this with a random text for the moment. This is just an example. 
+                            Don't take this text seriously
+                        </p>
+                        <button>MORE</button>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div id="contact-main-div">
+                    <h2>Get some info</h2>
+                    <form>
+                        <div id="contact-inputs-div">
+                            <div>
+                                <label for="full-name">
+                                    <span>Full name:</span>
+                                </label>
+                                <input id="full-name" placeholder="Full name" type="text" name="full-name">
+                            </div>
+                            <div>
+                                <label for="email">
+                                    <span>Email:</span>
+                                </label>
+                                <input id="email" placeholder="Email" type="email" name="email">
+                            </div>
+                            <div>
+                                <label for="message">
+                                    <span>Message:</span>
+                                </label>
+                                <textarea id="message" placeholder="Message" type="text" name="message"></textarea>
+                            </div>
+                            <input class="btn-form" type="reset" value="Reset">
+                            <input class="btn-form" type="submit" value="Send">
+                        </div>
+                        <div id="contact-area-div">
+                            <span>Contact area:</span>
+                            <div>   
+                                <input id="human-resources" type="radio" name="contact-area" value="human-resources">
+                                <label for="human-resources">Human Resources</label>
+                            </div>
+                            <div>
+                                <input id="systems" type="radio" name="contact-area" value="systems">
+                                <label for="systems">Systems</label>
+                            </div>
+                            <div> 
+                                <input id="marketing" type="radio" name="contact-area" value="marketing">
+                                <label for="marketing">Marketing</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section id="history">
+                <div>
+                    <h2>History of the business</h2>
+                    <div id="first-history-div">
+                        <span>The foundation</span>
+                        <p>
+                            Explanation here of the correspondent section. We left this with a random text for the moment. 
+                            This is just an example. Don't take this text seriously. Explanation here of the correspondent reason. 
+                            We left this with a random text for the moment. This is just an example. Don't take this text seriously. 
+                            Explanation here of the correspondent reason. We left this with a random text for the moment. This is just an example. 
+                            Don't take this text seriously.
+                        </p>
+                    </div>
+                    <div id="second-history-div">
+                        <span>Something else</span>
+                        <img src="assets/history-image-1.png" alt="People explaining something to another">
+                        <div id="first-second-div">
+                            <p id="first-paragraph">
+                                Explanation here of the correspondent section. We left this with a random text for the moment. 
+                                This is just an example. Don't take this text seriously. Explanation here of the correspondent reason. 
+                                We left this with a random text for the moment. This is just an example. Don't take this text seriously. 
+                                Explanation here of the correspondent reason. We left this with a random text for the moment. This is just an example. 
+                                Don't take this text seriously.
+                            </p>
+                            <p id="second-paragraph">
+                                Explanation here of the correspondent section. We left this with a random text for the moment. 
+                                This is just an example. Don't take this text seriously. Explanation here of the correspondent reason. 
+                                We left this with a random text for the moment. This is just an example. Don't take this text seriously. 
+                                Explanation here of the correspondent reason. We left this with a random text for the moment. This is just an example.
+                            </p>
+                        </div>
+                        <img src="assets/history-image-2.png" alt="Two hands holding a lightbulb">
+                        <p id="last-paragraph">
+                            Explanation here of the correspondent section. We left this with a random text for the moment. 
+                            This is just an example. Don't take this text seriously. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="lists">
+                <div> 
+                    <div class="list-div">
+                        <span>Our products</span>
+                        <ol>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="downloads.html">Downloads</a></li>
+                            <li><a href="integrations.html">Integrations</a></li>
+                            <li><a href="add-ons.html">Add-ons</a></li>
+                        </ol>
+                    </div>
+                    <div class="list-div">
+                        <span>Bussines</span>
+                        <ol>
+                            <li><a href="about-us.html">About us</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ol>
+                    </div>
+                    <div class="list-div">
+                        <span>Support</span>
+                        <ol>
+                            <li><a href="help.html">Help</a></li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+                            <li><a href="api.html">API</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <footer id="main-footer">
+                <div>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a> 
+                    <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram fa-xl"></i></a> 
+                    <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter fa-xl"></i></a> 
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a> 
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                </div>
+                <div>
+                    Copyright &copy; 2022 GigaTech Software Solutions SA. All rights reserved.
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
