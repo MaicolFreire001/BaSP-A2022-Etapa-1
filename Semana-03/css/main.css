@@ -1,0 +1,44 @@
+main{
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    border-bottom: #373867 solid 1px;
+}
+main p{
+    width: 630px;
+    margin-bottom: 50px;
+}
+main img{
+    width: 360px;
+    height: 340px;
+}
+main button{
+    display: block;
+    width: 140px;
+    height: 35px;
+}
+#main-div{
+    width: 720px;
+    vertical-align: top;
+}
+main h1{
+    display: inline;
+    width: 700px;
+    font-size: 40px;
+    font-weight: bold;
+}
+#main-text-div{
+    width: 720px;
+    vertical-align: top;
+}
+#title-span{
+    display: block;
+    width: 680px;
+}
+#subtitle-span{
+    width: 340px;
+    margin: 50px 0;
+    font-size: 20px;
+}
+#main-image-div, main p, #subtitle-span, #main-text-div, #main-div{
+    display: inline-block;
+}

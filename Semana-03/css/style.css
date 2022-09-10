@@ -1,10 +1,8 @@
 html{
-    width: 1440px;
-    height: 900px;
+    min-width: 480px;
+    height: auto;
 }
 body{
-    width: 1440px;
-    height: 900px;
     margin: 0;
     background-color: #fff;
     font-size: 14px;
@@ -20,134 +18,23 @@ h2{
     text-underline-offset: 8px;
 }
 button{
-    display: inline-block;
-    border: #FF3E1D solid 1px;
-    border-radius: 3px;
-    font-weight: bold;
     color:#FF3E1D;
 }
 button:hover{
-    display: inline-block;
     background-color: #FF3E1D;
+    color:#373867;
+}
+button, button:hover{
+    display: inline-block;
     border: #FF3E1D solid 1px;
     border-radius: 3px;
     font-weight: bold;
-    color:#373867;
-}
-header{
-    height: 50px;
-    margin-bottom: 50px;
-    border-bottom: #FF3E1D solid 2px;
-}
-main{
-    margin-bottom: 30px;
-    padding-bottom: 50px;
-    border-bottom: #373867 solid 1px;
-}
-main img{
-    width: 360px;
-    height: 340px;
-}
-main button{
-    display: block;
-    width: 140px;
-    height: 35px;
-}
-#sidebar{
-    position: fixed;
-    display: inline-block;
-    box-sizing: border-box;
-    width: 300px;
-    height: 100%;
-    background-color: #AACE9B;
-    color: #373867;
-}
-#sidebar span{
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: #FF3E1D;
-    text-decoration-skip-ink: none;
-    text-underline-offset: 8px;
-}
-#sidebar-menu{
-    width: 260px;
-    margin-top: 30px;
-    margin-left: 20px;
-    padding-bottom: 60px;
-    border-bottom: #373867 solid 1px;
-}
-#sidebar-menu span{
-    display: inline-block;
-    margin-bottom: 30px;
-
-}
-#sidebar ul{
-    display: inline;
-    padding-bottom: 30px;
-    border-bottom: #373867 solid 1px;
-    line-height: 45px;
-}
-#sidebar li{
-    width: 260px;
-    font-size: 20px;
-}
-#sidebar li:nth-child(1), #sidebar li:nth-child(2) {
-    border-bottom: #373867 solid 1px;
-}
-#sidebar a{
-    text-decoration: none;
-    color:#373867;
-}
-#sidebar a:hover{
-    text-decoration: none;
-    color:#FF3E1D;
-}
-#sidebar i{
-    margin-bottom: 10px;
-}
-#sidebar i{
-    color: #373867;
-}
-#sidebar-info{
-    width: 260px;
-    margin-top: 30px;
-    margin-left: 20px;
-    font-weight: bold;
-}
-#sidebar-info span{
-    display: inline-block;
-    margin: 30px 0px;
-}
-#sidebar-info p{
-    width: 260px;
-    margin-bottom: 40px;
-    font-weight: normal;
-}
-#sidebar-info img{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-}
-.sidebar-icon-text-container{
-    display: inline-block;
-    box-sizing: border-box;
-    margin: 6px auto;
-    padding: 0px 8px 5px 0px;
-    border-bottom: #373867 solid 1px;
-}
-.sidebar-info-text-div{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 210px;
-    margin-left: 5px;
-    vertical-align: middle;
 }
 .container{
     display: inline-block;
     box-sizing: border-box;
-    width: 1090px; 
-    margin-left: 340px;
+    width: 80%;
+    margin: 0px auto;
     background-color: #fff;
     color: #373867;
 }
@@ -156,52 +43,6 @@ main button{
 }
 .container i:hover{
     color: #FF3E1D;
-}
-#header-text{
-    display: inline-block;
-    margin-top: 30px;
-    margin-right: 665px;
-    font-size: 14px;
-}
-#header-text span{
-    font-weight: bold;
-}
-#header-icons{
-    display: inline-block;
-}
-#main-div{
-    display: inline-block;
-    width: 720px;
-    vertical-align: top;
-}
-.main-title{
-    display: inline;
-    width: 700px;
-    font-size: 40px;
-    font-weight: bold;
-}
-#main-text-div{
-    display: inline-block;
-    width: 720px;
-    vertical-align: top;
-}
-#title-span{
-    display: block;
-    width: 680px;
-}
-#subtitle-span{
-    display: inline-block;
-    width: 340px;
-    margin: 50px 0;
-    font-size: 20px;
-}
-#web-info-span{
-    display: inline-block;
-    width: 630px;
-    margin-bottom: 50px;
-}
-#main-image-div{
-    display: inline-block;
 }
 #reasons{
     margin-bottom: 30px;
@@ -430,11 +271,3 @@ main button{
 #lists a:hover{
     color: #171877;
 }
-#main-footer div{
-    margin: 20px 0;
-    text-align: center;
-}
-#main-footer img{
-    margin-right: 0px;
-}
-
