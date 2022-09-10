@@ -4,6 +4,8 @@
 - Trackgenix is a web system which facilitates the registration of hours worked by each employee in each project and work team.
 
 ## How to open
+1. Access this page in your web browser https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html
+### Or also
 1. Access to the folder of a week
 2. Open the files that you want to see on a text editor or a web browser
 3. Enjoy
