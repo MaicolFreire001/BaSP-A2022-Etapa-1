@@ -235,3 +235,26 @@ main p, #subtitle-span, #main-text-div, #main-div{
 #lists a:hover{
     color: #171877;
 }
+@media(min-width: 480px){
+    .container{
+        display: inline-block;
+        margin-left: 2em;
+    }
+    main .container{
+        flex-direction: row;
+        flex: 1;
+        align-items: center;
+    }
+    #reasons .reason-div{
+        display: inline-block;
+        box-sizing: border-box;
+        width: 40%;
+        vertical-align: top;
+        margin: 15px 20px;
+        padding: 15px;
+    }
+    #reasons .reason-div img{
+        margin-bottom: 1em;
+    }
+    
+}

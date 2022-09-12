@@ -56,8 +56,13 @@ button, button:hover{
 .container i:hover{
     color: #FF3E1D;
 }
-
-@media(min-width: 768px){
+@media(min-width: 480px){
+    *{
+        background-color: #2d66372f;
+    }
+    
+}
+@media(min-width: 1024px){
     /* #sidebar{
         display: flex;
         flex-direction: column;

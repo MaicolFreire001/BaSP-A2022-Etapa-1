@@ -13,3 +13,14 @@ header .container{
 #header-text span{
     font-weight: bold;
 }
+@media(min-width: 480px){
+    header .container{
+        gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #header-text{
+        margin: 0.5em 0;
+        font-size: 0.8em;
+    }
+}
