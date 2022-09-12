@@ -241,19 +241,48 @@ main p, #subtitle-span, #main-text-div, #main-div{
         margin-left: 2em;
     }
     main .container{
+        display: flex;
         flex-direction: row;
+        flex-basis: 400px;
+        flex-grow: 1;
+        gap: 0.5rem;
+    }
+    #main-div{
+        margin: 1em auto;
+        flex-grow: 2;
+    }
+    #main-image-div{
+        flex-grow: 1;
+    }
+    main .container div{
+        margin: 15px 5px;
+        padding: 10px;
         flex: 1;
-        align-items: center;
+    }
+    #main-image-div img{
+        min-width: 250px;
+        max-width: 500px;
+        width: 60%;
+        align-self: center;
+        margin: auto;
     }
     #reasons .reason-div{
         display: inline-block;
-        box-sizing: border-box;
-        width: 40%;
-        vertical-align: top;
-        margin: 15px 20px;
-        padding: 15px;
+        width: 35%;
+        margin: 10px 10px;
+        padding: 10px;
     }
     #reasons .reason-div img{
         margin-bottom: 1em;
     }
+    #features .feature-div{
+        display: inline-block;
+        width: 35%;
+        margin: 10px 10px;
+        padding: 10px;
+    }
+    #features .feature-div img{
+        margin-top: 1em;
+    }
+
 }
