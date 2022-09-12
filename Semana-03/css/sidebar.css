@@ -1,11 +1,11 @@
 #sidebar{
-    position: fixed;
-    width: 300px;
+    display: none;
+    width: 22%;
     height: 100%;
     background-color: #AACE9B;
     color: #373867;
 }
-#sidebar, .sidebar-icon-text-container, .sidebar-info-text-div{
+.sidebar-icon-text-container, .sidebar-info-text-div{
     display: inline-block;
     box-sizing: border-box;
 }
@@ -25,7 +25,6 @@
     text-underline-offset: 8px;
 }
 #sidebar-menu{
-    width: 260px;
     margin-top: 30px;
     margin-left: 20px;
     padding-bottom: 60px;
@@ -40,7 +39,6 @@
     line-height: 45px;
 }
 #sidebar li{
-    width: 260px;
     font-size: 20px;
 }
 #sidebar a{
@@ -57,7 +55,6 @@
     color: #373867;
 }
 #sidebar-info{
-    width: 260px;
     margin-top: 30px;
     margin-left: 20px;
     font-weight: bold;
@@ -66,20 +63,16 @@
     margin: 30px 0px;
 }
 #sidebar-info p{
-    width: 260px;
     margin-bottom: 40px;
     font-weight: normal;
 }
 #sidebar-info img{
-    width: 30px;
-    height: 30px;
 }
 .sidebar-icon-text-container{
     margin: 6px auto;
     padding: 0px 8px 5px 0px;
 }
 .sidebar-info-text-div{
-    width: 210px;
     margin-left: 5px;
     vertical-align: middle;
 }

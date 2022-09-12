@@ -1,6 +1,9 @@
-#main-footer div{
-    margin: 20px 0;
+#main-footer + div{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    align-self: center;
 }
 #main-footer img{
     margin-right: 0px;

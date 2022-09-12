@@ -1,44 +1,234 @@
-main{
-    margin-bottom: 30px;
-    padding-bottom: 50px;
-    border-bottom: #373867 solid 1px;
-}
 main p{
-    width: 630px;
-    margin-bottom: 50px;
-}
-main img{
-    width: 360px;
-    height: 340px;
+    margin-bottom: 1rem;
 }
 main button{
     display: block;
-    width: 140px;
-    height: 35px;
-}
-#main-div{
-    width: 720px;
-    vertical-align: top;
 }
 main h1{
-    display: inline;
-    width: 700px;
-    font-size: 40px;
+    margin-top: 20px;
     font-weight: bold;
+    font-size: x-large;
 }
 #main-text-div{
-    width: 720px;
     vertical-align: top;
+}
+#main-image-div{
+    display: flex;
+    flex-direction: column;
 }
 #title-span{
     display: block;
-    width: 680px;
 }
 #subtitle-span{
-    width: 340px;
-    margin: 50px 0;
-    font-size: 20px;
+    margin: 1em 0;
+    font-size: large;
 }
-#main-image-div, main p, #subtitle-span, #main-text-div, #main-div{
+main p, #subtitle-span, #main-text-div, #main-div{
     display: inline-block;
+}
+#reasons .container{
+    gap: 1rem;
+}
+#reasons h2{
+    margin-bottom: 20px;
+}
+.reason-div{
+    margin-top: 15px;
+    font-size: 14px;
+}
+.reason-div img{
+    width: 125px;
+}
+.reason-div p{
+    font-size: 0.5rem;
+}
+.reason-inside-div{
+    margin-top: 0px;
+    vertical-align: top;
+}
+.reason-inside-div span{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+#reasons span{
+    font-weight: bold;
+}
+#features h2{
+    margin-bottom: 20px;
+}
+.feature-div{
+    display: inline-block;
+}
+.feature-div img{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+#features span{
+    font-weight: bold;
+}
+.feature-div button{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.feature-div p, .feature-div span, .feature-div button{
+    margin-top: 30px;
+}
+#contact{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+#contact form > div{
+    display: inline-block;
+    vertical-align: top;
+}
+#contact-inputs-div input{
+    margin-top: 10px;
+}
+#contact-inputs-div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+#contact label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+#contact input{
+    border: #373867 solid 0.5px;
+    border-radius: 5px;
+}
+#contact input[type*="text"], #contact input[type*="email"]{
+    margin-bottom: 30px;
+    min-width: 200px;
+    height: 25px;
+}
+#contact textarea{
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 150px;
+    min-width: 200px;
+}
+#contact input[type="submit"]{
+    background-color: #AACE9B;
+    min-width: 150px;
+}
+#contact input[type="reset"]{
+    background-color: #F13312;
+    min-width: 150px;
+}
+#contact input[type="submit"]:hover{
+    background-color: #4EB125;
+}
+#contact input[type="reset"]:hover{
+    background-color: #FF2500;
+}
+.btn-form{
+    margin: 40px 0 15px 15px;
+    border: #373867 solid 0.5px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #373867;
+}
+#contact-area-div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#contact input[type*="radio"]{
+    accent-color: #373867;
+}
+#contact-area-div input{
+    margin-left: 0;
+    vertical-align: middle;
+}
+#contact-area-div label{
+    margin-bottom: 5px;
+    vertical-align: sub;
+}
+#history h2{
+    margin-bottom: 2rem;
+}
+#first-history-div p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#history span{
+    font-weight: bold;
+}
+#second-history-div span{
+    display: block;
+    margin-bottom: 20px;
+}
+#history img[src*="history-image-1"]{
+    display: inline-block;
+}
+#second-history-div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    flex-grow: 1;
+    gap: 0.5rem;
+}
+#second-history-div p{
+    vertical-align: top;
+}
+#second-history-div img, #second-history-div p{
+    display: inline-block;
+}
+#first-second-div{
+    display: inline-block;
+    vertical-align: top;
+}
+#first-paragraph{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+#history img[src*="history-image-2"]{
+    display: inline-block;
+}
+#last-paragraph{
+    margin-top: 15px;
+}
+.list-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#lists span{
+    font-weight: bold;
+}
+#lists ol{
+    margin: 10px 0;
+    list-style-type: decimal;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    align-self: center;
+}
+#lists li{
+    width: 4rem;
+
+}
+#lists a{
+    text-decoration: none;
+    color: #373867;
+}
+#lists a:hover{
+    color: #171877;
 }
