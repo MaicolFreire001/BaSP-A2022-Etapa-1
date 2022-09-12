@@ -101,10 +101,7 @@ main p, #subtitle-span, #main-text-div, #main-div{
     flex-basis: 400px;
     flex-grow: 1;
 }
-#contact label{
-    display: inline-block;
-    margin-bottom: 10px;
-}
+
 #contact input{
     border: #373867 solid 0.5px;
     border-radius: 5px;
@@ -125,13 +122,17 @@ main p, #subtitle-span, #main-text-div, #main-div{
 }
 #contact input[type="submit"]{
     background-color: #AACE9B;
-    min-width: 150px;
-    width: 60%;
+    min-width: 180px;
+    width: 90%;
+    height: 4em;
+    margin: 1rem 0rem;
 }
 #contact input[type="reset"]{
     background-color: #F13312;
-    min-width: 150px;
-    width: 60%;
+    min-width: 180px;
+    width: 90%;
+    height: 4em;
+    margin: 1rem 0rem;
 }
 #contact input[type="submit"]:hover{
     background-color: #4EB125;
@@ -150,11 +151,8 @@ main p, #subtitle-span, #main-text-div, #main-div{
 }
 #contact-area-div{
     margin-top: 1rem;
-    display: flex;
     flex-direction: column;
-    align-self: center;
 }
-
 #contact input[type*="radio"]{
     accent-color: #373867;
 }
@@ -163,8 +161,11 @@ main p, #subtitle-span, #main-text-div, #main-div{
     vertical-align: middle;
 }
 #contact-area-div label{
-    margin-bottom: 5px;
     vertical-align: sub;
+}
+#contact-area-div{
+    text-align: start;
+    padding-left: 0.5em;
 }
 #history h2{
     margin-bottom: 2rem;
@@ -251,10 +252,13 @@ main p, #subtitle-span, #main-text-div, #main-div{
     }
     #main-div{
         margin: 1em auto;
-        flex-grow: 2;
+        min-width: 160px;
     }
     #main-text-div{
         margin-top: 2.5em;
+    }
+    #main-text-div p{
+        margin-top: 2rem;
     }
     #main-image-div{
         flex-grow: 1;
@@ -265,11 +269,14 @@ main p, #subtitle-span, #main-text-div, #main-div{
         flex: 1;
     }
     #main-image-div img{
-        min-width: 250px;
+        min-width: 200px;
         max-width: 500px;
         width: 60%;
         align-self: center;
         margin: auto;
+    }
+    main button{
+        height: 4em;
     }
     #reasons .reason-div{
         display: inline-block;
@@ -293,5 +300,24 @@ main p, #subtitle-span, #main-text-div, #main-div{
         align-self: center;
         margin: auto;
     }
-
+    #contact form{
+        flex-direction: row;
+    }
+    #contact-inputs-div{
+        flex-grow: 1;
+    }
+    #contact-area-div{
+        flex-grow: 0;
+        align-self: center;
+    }
+    #contact-area-div div{
+        min-width: 150px;
+        margin-top: 1em;
+    }
+    .btn-form{
+        height: 2.5em;
+    }
+    #contact-area-div .btn-form:first-of-type{
+        margin-top: 3em;
+    }
 }
