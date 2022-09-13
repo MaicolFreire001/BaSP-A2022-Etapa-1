@@ -169,12 +169,21 @@ main p, #subtitle-span, #main-text-div, #main-div{
 #history h2{
     margin-bottom: 20px;
 }
+#first-history-div{
+    margin-top: 20px;
+}
 #first-history-div p{
     margin-top: 20px;
     margin-bottom: 40px;
 }
 #history span{
     font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+#history img{
+    width: 85%;
+    align-self: center;
 }
 #second-history-div span{
     display: block;
@@ -186,15 +195,13 @@ main p, #subtitle-span, #main-text-div, #main-div{
 #second-history-div{
     display: flex;
     flex-direction: column;
-    flex-basis: 400px;
-    flex-grow: 1;
-    gap: 0.5rem;
+    justify-content: space-around;
 }
 #second-history-div p{
     vertical-align: top;
 }
-#second-history-div img, #second-history-div p{
-    display: inline-block;
+#history .container > div > div{
+    padding: 10px;
 }
 #first-second-div{
     display: inline-block;
@@ -318,5 +325,21 @@ main p, #subtitle-span, #main-text-div, #main-div{
     #contact-area-div .btn-form:first-of-type{
         margin-top: 75px;
     }
-
+    #history .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #history .container > div{
+        display: flex;
+        flex-direction: row;
+    }
+    #history img{
+        min-width: 200px;
+        max-width: 500px;
+        align-self: center;
+    }
+    #history img[src*="history-image-2"]{
+        order: -1;
+    }
+    
 }
