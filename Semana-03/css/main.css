@@ -1,5 +1,5 @@
 main p{
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 main button{
     display: block;
@@ -20,7 +20,7 @@ main h1{
     display: block;
 }
 #subtitle-span{
-    margin: 1em 0;
+    margin: 10px 0;
     font-size: large;
 }
 main p, #subtitle-span, #main-text-div, #main-div{
@@ -40,7 +40,7 @@ main p, #subtitle-span, #main-text-div, #main-div{
     width: 125px;
 }
 .reason-div p{
-    font-size: 0.5rem;
+    font-size: medium;
 }
 .reason-inside-div{
     margin-top: 0px;
@@ -57,20 +57,20 @@ main p, #subtitle-span, #main-text-div, #main-div{
 #features h2{
     margin-bottom: 20px;
 }
-.feature-div{
-    display: inline-block;
-}
 .feature-div img{
     display: inline-block;
     margin-bottom: 30px;
+    width: 60%;
+    align-self: center;
+    margin: auto;
 }
 #features span{
     font-weight: bold;
 }
 .feature-div button{
-    margin-top: 1em;
+    margin-top: 15px;
     margin-bottom: 30px;
-    height: 4em;
+    height: 50px;
     width: 50%;
 }
 .feature-div p, .feature-div span, .feature-div button{
@@ -85,7 +85,6 @@ main p, #subtitle-span, #main-text-div, #main-div{
     display: flex;
     flex-direction: column;
     margin-top: 25px;
-    margin-left: 20px;
 }
 #contact form > div{
     display: inline-block;
@@ -124,15 +123,15 @@ main p, #subtitle-span, #main-text-div, #main-div{
     background-color: #AACE9B;
     min-width: 180px;
     width: 90%;
-    height: 4em;
-    margin: 1rem 0rem;
+    height: 50px;
+    margin: 15px 0;
 }
 #contact input[type="reset"]{
     background-color: #F13312;
     min-width: 180px;
     width: 90%;
-    height: 4em;
-    margin: 1rem 0rem;
+    height: 50px;
+    margin: 15px 0;
 }
 #contact input[type="submit"]:hover{
     background-color: #4EB125;
@@ -145,12 +144,12 @@ main p, #subtitle-span, #main-text-div, #main-div{
     border: #373867 solid 0.5px;
     height: 30px;
     border-radius: 5px;
-    font-size: 0.8rem;
+    font-size: small;
     font-weight: bold;
     color: #373867;
 }
 #contact-area-div{
-    margin-top: 1rem;
+    margin-top: 15px;
     flex-direction: column;
 }
 #contact input[type*="radio"]{
@@ -165,10 +164,10 @@ main p, #subtitle-span, #main-text-div, #main-div{
 }
 #contact-area-div{
     text-align: start;
-    padding-left: 0.5em;
+    padding-left: 10px;
 }
 #history h2{
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 #first-history-div p{
     margin-top: 20px;
@@ -229,7 +228,7 @@ main p, #subtitle-span, #main-text-div, #main-div{
     align-self: center;
 }
 #lists li{
-    width: 4rem;
+    width: 100%;
 }
 #lists a{
     text-decoration: none;
@@ -241,7 +240,7 @@ main p, #subtitle-span, #main-text-div, #main-div{
 @media(min-width: 480px){
     .container{
         display: inline-block;
-        margin-left: 2em;
+        margin-left: 40px;
     }
     main .container{
         display: flex;
@@ -251,14 +250,14 @@ main p, #subtitle-span, #main-text-div, #main-div{
         gap: 0.5rem;
     }
     #main-div{
-        margin: 1em auto;
+        margin: 15px auto;
         min-width: 160px;
     }
     #main-text-div{
-        margin-top: 2.5em;
+        margin-top: 30px;
     }
     #main-text-div p{
-        margin-top: 2rem;
+        margin-top: 30px;
     }
     #main-image-div{
         flex-grow: 1;
@@ -276,22 +275,21 @@ main p, #subtitle-span, #main-text-div, #main-div{
         margin: auto;
     }
     main button{
-        height: 4em;
+        height: 50px;
     }
     #reasons .reason-div{
+        flex: 0 1 45%;
         display: inline-block;
-        width: 48%;
-        padding: 0.2em;
-        margin: auto auto 1em auto;
+        width: 45%;
+        margin: auto 10px 10px auto;
     }
     #reasons .reason-div img{
-        margin-bottom: 1em;
+        margin-bottom: 10px;
     }
     #features .feature-div{
         display: inline-block;
         width: 48%;
-        padding: 0.2em;
-        margin: auto auto 1em auto;
+        margin: auto auto 10px auto;
     }
     #features .feature-div img{
         min-width: 160px;
@@ -312,12 +310,13 @@ main p, #subtitle-span, #main-text-div, #main-div{
     }
     #contact-area-div div{
         min-width: 150px;
-        margin-top: 1em;
+        margin-top: 10px;
     }
     .btn-form{
-        height: 2.5em;
+        height: 50px;
     }
     #contact-area-div .btn-form:first-of-type{
-        margin-top: 3em;
+        margin-top: 75px;
     }
+
 }

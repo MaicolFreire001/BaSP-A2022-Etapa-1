@@ -2,13 +2,13 @@ header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
     border-bottom: #FF2500 solid 1px;    
 }
 #header-text{
-    margin: 0.5em auto;
-    font-size: 0.6rem;
+    margin: 15px auto;
+    font-size: small;
 }
 #header-text span{
     font-weight: bold;
@@ -20,7 +20,7 @@ header .container{
         justify-content: space-between;
     }
     #header-text{
-        margin: 0.5em 0;
-        font-size: 0.8em;
+        margin: 15px 0;
+        font-size: small;
     }
 }

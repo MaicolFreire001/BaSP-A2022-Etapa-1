@@ -12,7 +12,7 @@ body{
     color: #373867;
 }
 h2{
-    font-size: 1.5rem;
+    font-size: x-large;
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: #FF3E1D;
@@ -21,8 +21,8 @@ h2{
 }
 button{
     color:#FF3E1D;
-    margin-bottom: 1rem;
-    height: 3em;
+    margin-bottom: 25px;
+    height: 50px;
 }
 button:hover{
     background-color: #FF3E1D;
@@ -34,6 +34,7 @@ button, button:hover{
     font-weight: bold;
 }
 .container{
+    min-width: 250px;
     width: 90%;
     margin: 0 auto;
     padding: 0 15px;
@@ -41,12 +42,10 @@ button, button:hover{
     background-color: #fff;
     color: #373867;
     border-bottom: #373867 solid 1px;
-    margin-bottom: 2em;
-    padding-bottom: 2em;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    flex-basis: 400px;
-    flex-grow: 1;
     gap: 0.5rem;
     text-align: center;
 }
