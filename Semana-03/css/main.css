@@ -1,3 +1,8 @@
+#content-div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 main p{
     margin-bottom: 20px;
 }
@@ -363,4 +368,7 @@ main p, #subtitle-span, #main-text-div, #main-div{
     #lists span{
         font-size: large;
     }
+}
+@media(min-width: 1024px){
+    
 }
