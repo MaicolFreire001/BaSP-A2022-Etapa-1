@@ -7,7 +7,7 @@ main button{
 main h1{
     margin-top: 20px;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
 }
 #main-text-div{
     vertical-align: top;
@@ -180,6 +180,7 @@ main p, #subtitle-span, #main-text-div, #main-div{
     font-weight: bold;
     display: block;
     margin-bottom: 15px;
+    font-size: medium;
 }
 #history img{
     width: 85%;
@@ -195,7 +196,7 @@ main p, #subtitle-span, #main-text-div, #main-div{
 #second-history-div{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 #second-history-div p{
     vertical-align: top;
@@ -245,6 +246,9 @@ main p, #subtitle-span, #main-text-div, #main-div{
     color: #171877;
 }
 @media(min-width: 480px){
+    p{
+        font-size: medium;
+    }
     .container{
         display: inline-block;
         margin-left: 40px;
@@ -293,6 +297,9 @@ main p, #subtitle-span, #main-text-div, #main-div{
     #reasons .reason-div img{
         margin-bottom: 10px;
     }
+    #reasons span{
+        font-size: large;
+    }
     #features .feature-div{
         display: inline-block;
         width: 48%;
@@ -303,7 +310,10 @@ main p, #subtitle-span, #main-text-div, #main-div{
         max-width: 500px;
         width: 60%;
         align-self: center;
-        margin: auto;
+        margin: 10px auto;
+    }
+    #features span{
+        font-size: large;
     }
     #contact form{
         flex-direction: row;
@@ -334,12 +344,23 @@ main p, #subtitle-span, #main-text-div, #main-div{
         flex-direction: row;
     }
     #history img{
-        min-width: 200px;
+        min-width: 180px;
         max-width: 500px;
         align-self: center;
     }
     #history img[src*="history-image-2"]{
         order: -1;
     }
-    
+    #lists .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #lists .list-div{
+        flex: 0 1 45%;
+        margin: 15px 0;
+    }
+    #lists span{
+        font-size: large;
+    }
 }

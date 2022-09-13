@@ -57,7 +57,7 @@ button, button:hover{
 }
 @media(min-width: 480px){
     *{
-        background-color: #2d66372f;
+        font-size: medium;
     }
     
 }
