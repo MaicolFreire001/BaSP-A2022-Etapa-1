@@ -24,3 +24,9 @@ y el operador +). */
 var texto = "lorEm ipsUm dolOr sIt amEt, consEctetUr adIpiscIng elIt."
 var textoPrimeraMayuscula = texto.substring(0, 1).toUpperCase() + texto.substring(1).toLowerCase();
 console.log("Primera letra en mayuscula queda:", textoPrimeraMayuscula);
+
+/* 2.e. Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. 
+Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf). */
+var texto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+var primerEspacioEnBlanco = texto.indexOf(" ");
+console.log("El primer espacio se encuentra en la posición", primerEspacioEnBlanco);
