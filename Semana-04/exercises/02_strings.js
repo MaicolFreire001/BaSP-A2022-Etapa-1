@@ -30,3 +30,15 @@ Encontrar la posición del primer espacio en blanco y guardarla en una variable 
 var texto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 var primerEspacioEnBlanco = texto.indexOf(" ");
 console.log("El primer espacio se encuentra en la posición", primerEspacioEnBlanco);
+
+/* 2.f. Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio 
+entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que 
+tenga la primera letra de ambas palabras en mayúscula y las demás letras en minúscula 
+(utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +). */
+var texto = "alcohol isopropilico"
+var primeraPalabra = texto.substring(0, texto.indexOf(" "));
+var primeraPalabraModificada = primeraPalabra.substring(0, 1).toUpperCase() + primeraPalabra.substring(1).toLowerCase();
+var segundaPalabra = texto.substring(texto.indexOf(" ")+1);
+var segundaPalabraModificada = segundaPalabra.substring(0, 1).toUpperCase() + segundaPalabra.substring(1).toLowerCase();
+var resultado = primeraPalabraModificada + " " + segundaPalabraModificada;
+console.log("El resultado es:", resultado);
