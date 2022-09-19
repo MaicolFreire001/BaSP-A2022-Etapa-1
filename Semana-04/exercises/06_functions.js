@@ -34,9 +34,16 @@ y que valide que los números sean enteros. En caso que haya decimales mostrar u
 y retornar el número convertido a entero (redondeado). */
 console.log('-Exercise 6.d:');
 function suma3(number1, number2){
-    if(!validateInteger(number1) || !validateInteger(number2)){
-        alert("The value is not an integer number");
-        return Math.round(number1 + number2);
+    if(isNaN(number1) || isNaN(number2)){
+        alert("One of the two values is not a number");
+        return NaN;
+    }else{
+        if(!validateInteger(number1) || !validateInteger(number2)){
+            alert("The value is not an integer number");
+            return Math.round(number1 + number2);
+        }else{
+            return number1 + number2;
+        }
     }
 }
 console.log("The result is:", suma3(12.5, 10));
@@ -45,14 +52,23 @@ console.log("The result is:", suma3(12.5, 10));
 dentro de la función suma probando que todo siga funcionando igual. */
 console.log('-Exercise 6.e:');
 function validateTwoIntegers(number1, number2){
-    return validateInteger(number1) && validateInteger(number2);
+    if(isNaN(number1) || isNaN(number2)){
+        alert("One of the two values is not a number");
+        return NaN;
+    }else{
+        if(!validateInteger(number1) || !validateInteger(number2)){
+            alert("The value is not an integer number");
+            return false;
+        }else{
+            return true;
+        }
+    }
 }
 function suma4(number1, number2){
-    if(!validateTwoIntegers(number1, number2)){
-        alert("The value is not an integer number");
-        return Math.round(number1 + number2);
-    }else{
+    if(validateTwoIntegers(number1, number2)){
         return number1 + number2;
+    }else if(!isNaN(validateTwoIntegers(number1, number2))){
+        return Math.round(number1 + number2);
     }
 }
 console.log("The result is:", suma4(15.5, 10));
