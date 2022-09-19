@@ -8,10 +8,8 @@
 #main-footer img{
     margin-right: 0px;
 }
-
 @media(min-width: 480px){
     #main-footer .container{
         display: flex;
     }
-
 }

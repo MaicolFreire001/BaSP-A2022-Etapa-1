@@ -4,7 +4,7 @@ header .container{
     align-items: center;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: #FF2500 solid 1px;    
+    border-bottom: #FF2500 solid 1px;
 }
 #header-text{
     margin: 15px auto;
