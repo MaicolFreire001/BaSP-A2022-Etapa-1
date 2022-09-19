@@ -57,3 +57,17 @@ button, button:hover{
         font-size: medium;
     }
 }
+@media(min-width: 1024px){
+    *{
+        text-align: start;
+    }
+    h2{
+        margin-left: 10px;
+    }
+    .container{
+        width: 95%;
+    }
+    #content-div{
+        margin-left: 3%;
+    }
+}

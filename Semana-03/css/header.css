@@ -27,3 +27,14 @@ header .container{
         font-size: small;
     }
 }
+@media(min-width: 1024px){
+    header .container{
+        padding-bottom: 0;
+    }
+    #header-text{
+        margin: 0 0 0 10px;
+    }
+    #header-icons {
+        padding-top: 5px;
+    }
+}

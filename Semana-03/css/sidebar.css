@@ -1,5 +1,5 @@
 #sidebar-div{
-    width: 68%;
+    width: 55%;
     display: none;
 }
 #sidebar{
@@ -82,6 +82,7 @@
 }
 #contact-info p{
     word-wrap: break-word;
+    min-width: 100px;
 }
 .sidebar-icon-text-container{
     display: flex;
