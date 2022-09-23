@@ -1,0 +1,395 @@
+#content-div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+main p{
+    margin-bottom: 20px;
+}
+main button{
+    display: block;
+}
+main h1{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+#main-text-div{
+    vertical-align: top;
+}
+#main-image-div{
+    display: flex;
+    flex-direction: column;
+}
+#title-span{
+    display: block;
+}
+#subtitle-span{
+    margin: 10px 0;
+    font-size: large;
+}
+main p, #subtitle-span, #main-text-div, #main-div{
+    display: inline-block;
+}
+#reasons .container{
+    gap: 1rem;
+}
+#reasons h2{
+    margin-bottom: 20px;
+}
+.reason-div{
+    margin-top: 15px;
+    font-size: 14px;
+}
+.reason-div img{
+    width: 125px;
+}
+.reason-div p{
+    font-size: medium;
+}
+.reason-inside-div{
+    margin-top: 0px;
+    vertical-align: top;
+}
+.reason-inside-div span{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+#reasons span{
+    font-weight: bold;
+}
+#features h2{
+    margin-bottom: 20px;
+}
+.feature-div img{
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 60%;
+    align-self: center;
+    margin: auto;
+}
+#features span{
+    font-weight: bold;
+}
+.feature-div button{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 50%;
+}
+.feature-div p, .feature-div span, .feature-div button{
+    margin-top: 30px;
+}
+#contact{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+#contact form > div{
+    display: inline-block;
+    vertical-align: top;
+}
+#contact-inputs-div input{
+    margin-top: 10px;
+}
+#contact-inputs-div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#contact input{
+    border: #373867 solid 0.5px;
+    border-radius: 5px;
+}
+#contact input[type*="text"], #contact input[type*="email"]{
+    margin-bottom: 30px;
+    min-width: 200px;
+    height: 25px;
+    width: 60%;
+}
+#contact textarea{
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 150px;
+    min-width: 200px;
+    width: 80%;
+}
+#contact input[type="submit"]{
+    background-color: #AACE9B;
+    min-width: 180px;
+    width: 90%;
+    height: 50px;
+    margin: 15px 0;
+}
+#contact input[type="reset"]{
+    background-color: #F13312;
+    min-width: 180px;
+    width: 90%;
+    height: 50px;
+    margin: 15px 0;
+}
+#contact input[type="submit"]:hover{
+    background-color: #4EB125;
+}
+#contact input[type="reset"]:hover{
+    background-color: #FF2500;
+}
+.btn-form{
+    margin: 40px 0 15px 15px;
+    border: #373867 solid 0.5px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    color: #373867;
+}
+#contact-area-div{
+    margin-top: 15px;
+    flex-direction: column;
+}
+#contact input[type*="radio"]{
+    accent-color: #373867;
+}
+#contact-area-div input{
+    margin-left: 0;
+    vertical-align: middle;
+}
+#contact-area-div label{
+    vertical-align: sub;
+}
+#contact-area-div{
+    text-align: start;
+    padding-left: 10px;
+}
+#history h2{
+    margin-bottom: 20px;
+}
+#first-history-div{
+    margin-top: 20px;
+}
+#first-history-div p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#history span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+    font-size: medium;
+}
+#history img{
+    width: 85%;
+    align-self: center;
+}
+#second-history-div span{
+    display: block;
+    margin-bottom: 20px;
+}
+#history img[src*="history-image-1"]{
+    display: inline-block;
+}
+#second-history-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#second-history-div p{
+    vertical-align: top;
+}
+#history .container > div > div{
+    padding: 10px;
+}
+#first-second-div{
+    display: inline-block;
+    vertical-align: top;
+}
+#first-paragraph{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+#history img[src*="history-image-2"]{
+    display: inline-block;
+}
+#last-paragraph{
+    margin-top: 15px;
+}
+.list-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#lists span{
+    font-weight: bold;
+}
+#lists ol{
+    margin: 10px 0;
+    list-style-type: decimal;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    align-self: center;
+}
+#lists li{
+    width: 100%;
+}
+#lists a{
+    text-decoration: none;
+    color: #373867;
+}
+#lists a:hover{
+    color: #171877;
+}
+@media(min-width: 480px){
+    p{
+        font-size: medium;
+    }
+    .container{
+        display: inline-block;
+        margin-left: 40px;
+    }
+    main .container{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 400px;
+        flex-grow: 1;
+        gap: 0.5rem;
+    }
+    #main-div{
+        margin: 15px auto;
+        min-width: 160px;
+    }
+    #main-text-div{
+        margin-top: 30px;
+    }
+    #main-text-div p{
+        margin-top: 30px;
+    }
+    #main-image-div{
+        flex-grow: 1;
+    }
+    main .container div{
+        margin: 15px 5px;
+        padding: 10px;
+        flex: 1;
+    }
+    #main-image-div img{
+        min-width: 200px;
+        max-width: 500px;
+        width: 60%;
+        align-self: center;
+        margin: auto;
+    }
+    main button{
+        height: 50px;
+    }
+    #reasons .reason-div{
+        flex: 0 1 45%;
+        display: inline-block;
+        width: 45%;
+        margin: auto 10px 10px auto;
+    }
+    #reasons .reason-div img{
+        margin-bottom: 10px;
+    }
+    #reasons span{
+        font-size: large;
+    }
+    #features .feature-div{
+        display: inline-block;
+        width: 48%;
+        margin: auto auto 10px auto;
+    }
+    #features .feature-div img{
+        min-width: 160px;
+        max-width: 500px;
+        width: 60%;
+        align-self: center;
+        margin: 10px auto;
+    }
+    #features span{
+        font-size: large;
+    }
+    #contact form{
+        flex-direction: row;
+    }
+    #contact-inputs-div{
+        flex-grow: 1;
+    }
+    #contact-area-div{
+        flex-grow: 0;
+        align-self: center;
+    }
+    #contact-area-div div{
+        min-width: 150px;
+        margin-top: 10px;
+    }
+    .btn-form{
+        height: 50px;
+    }
+    #contact-area-div .btn-form:first-of-type{
+        margin-top: 75px;
+    }
+    #history .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #history .container > div{
+        display: flex;
+        flex-direction: row;
+    }
+    #history img{
+        min-width: 180px;
+        max-width: 500px;
+        align-self: center;
+    }
+    #history img[src*="history-image-2"]{
+        order: -1;
+    }
+    #lists .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #lists .list-div{
+        flex: 0 1 45%;
+        margin: 15px 0;
+    }
+    #lists span{
+        font-size: large;
+    }
+}
+@media(min-width: 1024px){
+    main .container div{
+        margin: 0;
+    }
+    #contact{
+        margin-top: 0;
+    }
+    #contact-inputs-div div{
+        display: block;
+    }
+    #contact-inputs-div div label{
+        display: block;
+    }
+    .reason-inside-div{
+        display: inline-block;
+        width: 75%;
+    }
+    #reasons .reason-div img{
+        vertical-align: middle;
+    }
+    #lists span{
+        text-align: center;
+    }
+}

@@ -1,0 +1,20 @@
+#main-footer + div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: center;
+}
+#main-footer img{
+    margin-right: 0px;
+}
+@media(min-width: 480px){
+    #main-footer .container{
+        display: flex;
+    }
+}
+@media(min-width: 1024px){
+    #main-footer div{
+        text-align: center;
+    }
+}
