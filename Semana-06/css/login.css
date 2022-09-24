@@ -1,6 +1,7 @@
 .container{
     align-items: center;
     font-size: medium;
+    border: none;
 }
 #content-div{
     margin-left: 5%;

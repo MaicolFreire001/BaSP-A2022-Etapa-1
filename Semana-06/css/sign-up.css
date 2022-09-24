@@ -1,0 +1,67 @@
+.container{
+    align-items: center;
+    font-size: medium;
+    border: none;
+    padding: 40px;
+}
+#content-div{
+    margin-left: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+h1{
+    font-size: xx-large;
+    align-self: center;
+    margin-bottom: 20px;
+}
+fieldset > label{
+    text-align: start;
+}
+input[type="text"], input[type="password"], input[type="date"]{
+    margin: 10px 0 25px 0;
+    min-height: 30px;
+    border-radius: 8px;
+    border: 0.5px solid #373867;
+    width: 100%;
+    padding: 10px;
+}
+form{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+}
+label{
+    display: block;
+}
+a{
+    margin: 10px;
+    text-decoration: none;
+}
+a:hover{
+    color: #FF3E1D;
+}
+button{
+    border-radius: 8px;
+    background-color: #373867;
+    border: #373867 solid 1px;
+    color: #fff;
+    width: 75%;
+    text-align: center;
+    align-self: center;
+}
+span{
+    font-weight: bold;
+}
+.green-border{
+    border: green 2px solid;
+}
+.red-border{
+    border: red 2px solid;
+}
