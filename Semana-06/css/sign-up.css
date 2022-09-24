@@ -1,21 +1,6 @@
-.container{
-    align-items: center;
-    font-size: medium;
-    border: none;
-    padding: 40px;
-}
-#content-div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
 h1{
-    font-size: xx-large;
-    align-self: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
 }
 fieldset > label{
     text-align: start;
@@ -40,7 +25,6 @@ label{
     display: block;
 }
 a{
-    margin: 10px;
     text-decoration: none;
 }
 a:hover{

@@ -8,6 +8,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: #373867;
 }
+h1{
+    font-size: xx-large;
+    align-self: center;
+    margin-bottom: 20px;
+}
 h2{
     font-size: x-large;
     font-weight: bold;
@@ -51,6 +56,45 @@ button, button:hover{
 }
 .container i:hover{
     color: #FF3E1D;
+}
+#content-div-login{
+    margin-left: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#container-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: medium;
+    border: none;
+}
+#container-signup{
+    align-items: center;
+    font-size: medium;
+    border: none;
+    padding: 40px;
+}
+#content-div-signup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#back-button{
+    border: solid 1px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: lightgray;
+}
+#back-button:hover{
+    background-color: lightcoral;
 }
 @media(min-width: 480px){
     *{
