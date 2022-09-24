@@ -20,5 +20,5 @@ window.onload = function() {
 
 function validateEmail(emailText){
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-    return emailText.match(emailExpression);
+    return emailExpression.test(emailText);
 }
