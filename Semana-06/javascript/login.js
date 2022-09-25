@@ -5,7 +5,6 @@ window.onload = function() {
     var emailInput = document.getElementById("email");
     var passwordInput = document.getElementById("password");
     var fieldset = document.getElementsByTagName("fieldset");
-    console.log(fieldset);
     var errorMail = document.createElement("label");
     var errorPWord = document.createElement("label");
     errorMail.innerHTML = " ";
@@ -61,7 +60,6 @@ function validateEmail(emailText){
 }
 function passwordVerification(passwordText, errorPWord){
     if(passwordText.length >= 8){
-        console.log(passwordText);
         return !hasSpecialChar(passwordText, errorPWord);
     }else{
         errorPWord.innerHTML = "Password must be 8 or more characters";
