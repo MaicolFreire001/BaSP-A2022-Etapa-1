@@ -195,10 +195,6 @@ window.onload = function() {
             validAddress = false;
             errorAddress.innerHTML = "Address must be longer than 4 characters";
         }
-
-        console.log("Letra: ",haveLetter(address.value));
-        console.log("Numero: ",haveNumber(address.value));
-        console.log("Espacio: ",haveAnSpace(address.value));
     }
     address.onfocus = function() {
         address.classList.remove("green-border");
@@ -436,18 +432,13 @@ function checkDate(date){
     var dateArray = date.split("-");
     if(dateArray[0] > 2004){
         return false;
-        console.log("Year");
     }else if(dateArray[0] == 2004 && dateArray[1] > 9){
         return false;
-        console.log("Year and month");
     }else if(dateArray[0] == 2004 && dateArray[1] == 9 && dateArray[2] > 25){
         return false;
-        console.log("None");
     }else{
         return true;
-        console.log("+18");
     }
-
 }
 function validateEmail(emailText){
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
