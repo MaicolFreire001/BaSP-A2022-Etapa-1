@@ -56,9 +56,6 @@ span{
 .red-border{
     border: red 2px solid;
 }
-.error-hidden{
-    display: none;
-}
 .error-message{
     display: block;
     color: red;

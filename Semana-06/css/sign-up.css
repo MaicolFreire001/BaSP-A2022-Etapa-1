@@ -5,11 +5,13 @@ h1{
 fieldset > label{
     text-align: start;
 }
+fieldset label:first-child{
+    margin-top: 30px;
+}
 input[type="text"], input[type="password"], input[type="date"]{
     margin: 10px 0 25px 0;
     min-height: 30px;
     border-radius: 8px;
-    border: 0.5px solid #373867;
     width: 100%;
     padding: 10px;
 }
@@ -39,6 +41,7 @@ input[type="submit"]{
     text-align: center;
     align-self: center;
     min-height: 45px;
+    margin: 20px 5px;
 }
 span{
     font-weight: bold;
@@ -53,4 +56,11 @@ span{
 }
 .red-border{
     border: red 2px solid;
+}
+.error-message{
+    display: block;
+    color: red;
+    font-size: small;
+    font-weight: bold;
+    max-width: fit-content;
 }

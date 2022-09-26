@@ -37,6 +37,7 @@ window.onload = function() {
         }else{
             passwordInput.classList.add("red-border");
             validPassword = false;
+            errorPWord.innerHTML = "Password must not contain special characters";
         }
     }
     passwordInput.onfocus = function() {
