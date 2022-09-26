@@ -5,8 +5,8 @@ window.onload = function() {
     var emailInput = document.getElementById("email");
     var passwordInput = document.getElementById("password");
     var fieldset = document.getElementsByTagName("fieldset");
-    var errorMail = document.createElement("label");
-    var errorPWord = document.createElement("label");
+    var errorMail = document.createElement("p");
+    var errorPWord = document.createElement("p");
     errorMail.innerHTML = " ";
     errorPWord.innerHTML = " ";
     errorMail.classList.add("error-message");
