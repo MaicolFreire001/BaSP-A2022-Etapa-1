@@ -19,9 +19,14 @@ form{
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     min-width: 50%;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+form div{
+    width: 50%;
 }
 label{
     display: block;
@@ -40,7 +45,7 @@ input[type="submit"]{
     width: 75%;
     text-align: center;
     align-self: center;
-    min-height: 45px;
+    min-height: 70px;
     margin: 20px 5px;
 }
 span{
@@ -49,6 +54,9 @@ span{
 @media(min-width: 1024px){
     #back-button{
         display: none;
+    }
+    form div{
+        width: 40%;
     }
 }
 .green-border{
