@@ -49,6 +49,11 @@ span{
     #back-button{
         display: none;
     }
+    form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
 }
 .green-border{
     border: green 2px solid;
