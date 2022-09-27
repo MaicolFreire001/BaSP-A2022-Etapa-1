@@ -21,13 +21,16 @@ Created and applied a CCS style file to the landing page.
 
 ### Week 04 - FLEXBOX
 Made the .css files modular, used flexbox for the page layout and made the landing page resposive for mobile, tablet and desktop.
-https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
+- https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
 
 ### Week 05 - JAVASCRIPT
 Made corrections to the last week page and also a bunch of JavaScript exercises.
-https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-05/index.html
+- https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-05/index.html
 
 ### Week 06 - JAVASCRIPT - Document Object Model
-
+Created the pages for login and signup with its respectives forms and used DOM to add verifications to the inputs of these forms.
+- https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-06/views/index.html
+- https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-06/views/employee-signup.html
+- https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-06/views/login.html
 
 _By Maicol Freire_
