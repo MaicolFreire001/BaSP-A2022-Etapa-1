@@ -305,11 +305,14 @@ window.onload = function() {
             .then( function(res) {
                 return res.json();
             })
-            .then(function(data){
-                alert(data.msg + "\n" + getInputData().join("\n"));
+            .then(function(data) {
+                var responseData = "First name: "+data.data.name+"\nLast name: "+data.data.lastName+"\nDNI: "+data.data.dni+
+                "\nDate of birth: "+data.data.dob+"\nPhone: "+data.data.phone+"\nAddress: "+data.data.address+"\nLocality: "+
+                data.data.city+"\nPostal code: "+data.data.zip+"\nEmail: "+data.data.email+"\nPassword: "+data.data.password;
+                alert(data.msg + "\n" + responseData);
             })
             .catch( function(error) {
-                console.log(error);
+                alert(error);
             })
         }else{
             if(!validFirstName) alert("Invalid first name entered");
