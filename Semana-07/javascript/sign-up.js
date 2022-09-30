@@ -294,14 +294,23 @@ window.onload = function() {
         repeatPassword.classList.remove("red-border");
         errorRepeatPassword.innerHTML = " ";
     }
-    sendButton.onclick = function() {
+    sendButton.onclick = function(event) {
+        event.preventDefault();
         if(validFirstName && validLastName && validDNI && validDate
-            && validTel && validAddress && validLocality && validPostalCode
-            && validEmail && validPassword && validMatchingPassword){
-            alert("Sign up succesful \nFirst name: "+ firstName.value + "\nLast name: " + lastName.value +
-            "\nDNI: " + dni.value + "\nDate of birth: " + dateOfBirth.value + "\nTelephone: " + telephone.value +
-            "\nAddress: " + address.value + "\nLocality: " + locality.value + "\nPostal code: " + postalCode.value +
-            "\nEmail: " + email.value + "\nPassword: " + password.value + "\nRepeated password: " + repeatPassword.value);
+        && validTel && validAddress && validLocality && validPostalCode
+        && validEmail && validPassword && validMatchingPassword)
+        {
+            var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?' + dataToQueryParams(getInputData());
+            fetch(url)
+            .then( function(res) {
+                return res.json();
+            })
+            .then(function(data){
+                alert(data.msg + "\n" + getInputData().join("\n"));
+            })
+            .catch( function(error) {
+                console.log(error);
+            })
         }else{
             if(!validFirstName) alert("Invalid first name entered");
             if(!validLastName) alert("Invalid last name entered");
@@ -451,4 +460,17 @@ function passwordVerification(passwordText, errorPWord){
         errorPWord.innerHTML = "Password must be 8 or more characters";
         return false;
     }
+}
+function getInputData(){
+    var dateArray = dateOfBirth.value.split("-");
+    sortedDate = dateArray[1]+ '/' + dateArray[2]+ '/' + dateArray[0];
+    var filledAddress = address.value.split(" ").join("%20");
+    var data = ["name="+firstName.value, "lastName="+lastName.value,
+    "dni="+dni.value, "dob="+sortedDate, "phone="+telephone.value,
+    "address="+address.value, "city="+locality.value,"zip="+postalCode.value,
+    "email="+email.value,"password="+password.value];
+    return data;
+}
+function dataToQueryParams(inputData){
+    return inputData.join('&');
 }
