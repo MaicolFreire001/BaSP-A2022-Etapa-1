@@ -306,10 +306,10 @@ window.onload = function() {
                 return res.json();
             })
             .then(function(data) {
-                var responseData = "First name: "+data.data.name+"\nLast name: "+data.data.lastName+"\nDNI: "+data.data.dni+
-                "\nDate of birth: "+data.data.dob+"\nPhone: "+data.data.phone+"\nAddress: "+data.data.address+"\nLocality: "+
-                data.data.city+"\nPostal code: "+data.data.zip+"\nEmail: "+data.data.email+"\nPassword: "+data.data.password;
-                alert(data.msg + "\n" + responseData);
+                var responseData = ["First name: "+data.data.name,"Last name: "+data.data.lastName,"DNI: "+data.data.dni,
+                "Date of birth: "+data.data.dob,"Phone: "+data.data.phone,"Address: "+data.data.address,"Locality: "+
+                data.data.city,"Postal code: "+data.data.zip,"Email: "+data.data.email,"Password: "+data.data.password];
+                alert(data.msg + "\n" + responseData.join("\n"));
             })
             .catch( function(error) {
                 alert(error);
