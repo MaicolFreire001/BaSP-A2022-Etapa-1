@@ -1,0 +1,70 @@
+form{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+fieldset > label{
+    text-align: start;
+}
+fieldset label:first-child{
+    margin-top: 30px;
+}
+input[type="text"], input[type="password"]{
+    margin: 10px 0 5px 0;
+    min-height: 30px;
+    border-radius: 8px;
+}
+label{
+    display: block;
+}
+a{
+    margin: 10px;
+    text-decoration: none;
+}
+a:hover{
+    color: #FF3E1D;
+}
+input[type="submit"]{
+    border-radius: 8px;
+    background-color: #373867;
+    border: #373867 solid 1px;
+    color: #fff;
+    width: 75%;
+    text-align: center;
+    align-self: center;
+    min-height: 45px;
+    margin: 20px 5px;
+}
+span{
+    font-weight: bold;
+}
+@media(min-width: 1024px){
+    #back-button{
+        display: none;
+    }
+    form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+}
+.green-border{
+    border: green 2px solid;
+}
+.red-border{
+    border: red 2px solid;
+}
+.error-message{
+    display: block;
+    color: red;
+    font-size: small;
+    font-weight: bold;
+    max-width: fit-content;
+}

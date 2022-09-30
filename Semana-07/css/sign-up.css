@@ -1,0 +1,74 @@
+h1{
+    margin-top: 20px;
+    text-align: center;
+}
+fieldset > label{
+    text-align: start;
+}
+fieldset label:first-child{
+    margin-top: 30px;
+}
+input[type="text"], input[type="password"], input[type="date"]{
+    margin: 10px 0 25px 0;
+    min-height: 30px;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+}
+form{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 50%;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+form div{
+    width: 50%;
+}
+label{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #FF3E1D;
+}
+input[type="submit"]{
+    border-radius: 8px;
+    background-color: #373867;
+    border: #373867 solid 1px;
+    color: #fff;
+    width: 75%;
+    text-align: center;
+    align-self: center;
+    min-height: 70px;
+    margin: 20px 5px;
+}
+span{
+    font-weight: bold;
+}
+@media(min-width: 1024px){
+    #back-button{
+        display: none;
+    }
+    form div{
+        width: 40%;
+    }
+}
+.green-border{
+    border: green 2px solid;
+}
+.red-border{
+    border: red 2px solid;
+}
+.error-message{
+    display: block;
+    color: red;
+    font-size: small;
+    font-weight: bold;
+    max-width: fit-content;
+}
