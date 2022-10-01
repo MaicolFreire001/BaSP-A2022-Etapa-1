@@ -9,6 +9,8 @@ var validPostalCode = false;
 var validEmail = false;
 var validPassword = false;
 var validMatchingPassword = false;
+var keyName = ["name","lastName","dni", "dob", "phone","address",
+"city","zip","email","password"];
 
 window.onload = function() {
 
@@ -23,6 +25,8 @@ window.onload = function() {
     var email = document.getElementById("email");
     var password = document.getElementById("password");
     var repeatPassword = document.getElementById("repeatPassword");
+    var fields = [firstName, lastName, dni, dateOfBirth, telephone, address, locality,
+         postalCode, email, password];
 
     var fieldset = document.getElementsByTagName("fieldset");
     var errorFirstName = document.createElement("p");
@@ -74,6 +78,8 @@ window.onload = function() {
     fieldset[10].appendChild(errorRepeatPassword);
 
     var sendButton = document.getElementById("submit-button");
+
+    loadFields(fields);
 
     firstName.onblur = function() {
         if(checkLength(firstName.value, 3)){
@@ -306,10 +312,17 @@ window.onload = function() {
                 return res.json();
             })
             .then(function(data) {
+                tempDate = data.data.dob.split("/");
+                fixedDate = tempDate[2]+"-"+tempDate[0]+"-"+tempDate[1];
                 var responseData = ["First name: "+data.data.name,"Last name: "+data.data.lastName,"DNI: "+data.data.dni,
-                "Date of birth: "+data.data.dob,"Phone: "+data.data.phone,"Address: "+data.data.address,"Locality: "+
+                "Date of birth: "+fixedDate,"Phone: "+data.data.phone,"Address: "+data.data.address,"Locality: "+
                 data.data.city,"Postal code: "+data.data.zip,"Email: "+data.data.email,"Password: "+data.data.password];
                 alert(data.msg + "\n" + responseData.join("\n"));
+                if(responseData.length == keyName.length){
+                    for(var i = 0; i < responseData.length; i++){
+                        localStorage.setItem(keyName[i],responseData[i].split(":")[1].slice(1));
+                    }
+                }
             })
             .catch( function(error) {
                 alert(error);
@@ -476,4 +489,21 @@ function getInputData(){
 }
 function dataToQueryParams(inputData){
     return inputData.join('&');
+}
+function loadFields(fields){
+    if(localStorage.length > 0){
+        for(var i = 0; i < fields.length-1; i++){
+        fields[i].value = localStorage.getItem(keyName[i]);
+        fields[i].classList.add("green-border");
+        }
+        validFirstName = true;
+        validLastName = true;
+        validDNI = true;
+        validDate = true;
+        validTel = true;
+        validAddress = true;
+        validLocality = true;
+        validPostalCode = true;
+        validEmail = true;
+    }
 }
