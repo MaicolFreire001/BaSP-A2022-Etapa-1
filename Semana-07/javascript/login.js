@@ -48,12 +48,14 @@ window.onload = function() {
     sendButton.onclick = function(event) {
         event.preventDefault();
         if(validEmail && validPassword){
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email='+emailInput.value
-            +'&password='+passwordInput.value)
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email='+emailInput.value+'&password='+passwordInput.value)
                 .then( function(res) {
-                    return res.json();
+                    if(res.ok){
+                        return res.json();
+                    }
+                    throw new Error(res.status +" "+ res.statusText +"\n"+ "Wrong email or password");
                 })
-                .then( function(data){
+                .then( function(data) {
                     alert(data.msg);
                 })
                 .catch( function(error) {
