@@ -33,4 +33,10 @@ Created the pages for login and signup with its respectives forms and used DOM t
 - https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-06/views/employee-signup.html
 - https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-06/views/login.html
 
+### Week 07 - JAVASCRIPT - Request HTTP
+Added the requests using Fetch to validate and send the input data of the log in and sign up to a server.
+- https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-07/views/index.html
+- https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-07/views/employee-signup.html
+- https://maicolfreire001.github.io/BaSP-A2022-Etapa-1/Semana-07/views/login.html
+
 _By Maicol Freire_
