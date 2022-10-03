@@ -256,7 +256,7 @@ window.onload = function() {
         }else{
             email.classList.add("red-border");
             validEmail = false;
-            errorEmail.innerHTML = "Invalid email";
+            errorEmail.innerHTML = "Invalid email format";
         }
     }
     email.onfocus = function() {
@@ -343,17 +343,17 @@ window.onload = function() {
             })
         }else{
             var errorAlert = ["Error: "];
-            if(!validFirstName) errorAlert.push("Invalid first name entered");
-            if(!validLastName) errorAlert.push("Invalid last name entered");
-            if(!validDNI) errorAlert.push("Invalid DNI entered");
-            if(!validDate) errorAlert.push("Invalid date of birth entered");
-            if(!validTel) errorAlert.push("Invalid telephone entered");
-            if(!validAddress) errorAlert.push("Invalid address entered");
-            if(!validLocality) errorAlert.push("Invalid locality entered");
-            if(!validPostalCode) errorAlert.push("Invalid postal code entered");
-            if(!validEmail) errorAlert.push("Invalid email entered");
-            if(!validPassword) errorAlert.push("Invalid password entered");
-            if(!validMatchingPassword) errorAlert.push("Passwords didn't match");
+            if(!validFirstName) errorAlert.push(errorFirstName.innerHTML);
+            if(!validLastName) errorAlert.push(errorLastName.innerHTML);
+            if(!validDNI) errorAlert.push(errorDni.innerHTML);
+            if(!validDate) errorAlert.push(errorDate.innerHTML);
+            if(!validTel) errorAlert.push(errorTel.innerHTML);
+            if(!validAddress) errorAlert.push(errorAddress.innerHTML);
+            if(!validLocality) errorAlert.push(errorLocality.innerHTML);
+            if(!validPostalCode) errorAlert.push(errorPostalCode.innerHTML);
+            if(!validEmail) errorAlert.push(errorEmail.innerHTML);
+            if(!validPassword) errorAlert.push(errorPassword.innerHTML);
+            if(!validMatchingPassword) errorAlert.push(errorRepeatPassword.innerHTML);
             alert(errorAlert.join("\n"));
         }
     }
