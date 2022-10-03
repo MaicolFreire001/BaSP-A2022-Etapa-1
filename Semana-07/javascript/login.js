@@ -6,13 +6,13 @@ window.onload = function() {
     var passwordInput = document.getElementById("password");
     var fieldset = document.getElementsByTagName("fieldset");
     var errorMail = document.createElement("p");
-    var errorPWord = document.createElement("p");
+    var errorPassword = document.createElement("p");
     errorMail.innerHTML = " ";
-    errorPWord.innerHTML = " ";
+    errorPassword.innerHTML = " ";
     errorMail.classList.add("error-message");
-    errorPWord.classList.add("error-message");
+    errorPassword.classList.add("error-message");
     fieldset[0].appendChild(errorMail);
-    fieldset[1].appendChild(errorPWord);
+    fieldset[1].appendChild(errorPassword);
     var sendButton = document.getElementById("submit-button");
 
     emailInput.onblur = function() {
@@ -31,19 +31,19 @@ window.onload = function() {
         errorMail.innerHTML = " ";
     }
     passwordInput.onblur = function() {
-        if(passwordVerification(passwordInput.value, errorPWord)){
+        if(passwordVerification(passwordInput.value, errorPassword)){
             passwordInput.classList.add("green-border");
             validPassword = true;
         }else{
             passwordInput.classList.add("red-border");
             validPassword = false;
-            errorPWord.innerHTML = "Password must not contain special characters";
+            errorPassword.innerHTML = "Password must not contain special characters";
         }
     }
     passwordInput.onfocus = function() {
         passwordInput.classList.remove("green-border");
         passwordInput.classList.remove("red-border");
-        errorPWord.innerHTML = " ";
+        errorPassword.innerHTML = " ";
     }
     sendButton.onclick = function(event) {
         event.preventDefault();
@@ -72,15 +72,15 @@ function validateEmail(emailText){
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     return emailExpression.test(emailText);
 }
-function passwordVerification(passwordText, errorPWord){
+function passwordVerification(passwordText, errorPassword){
     if(passwordText.length >= 8){
-        return !hasSpecialChar(passwordText, errorPWord);
+        return !hasSpecialChar(passwordText, errorPassword);
     }else{
-        errorPWord.innerHTML = "Password must be 8 or more characters";
+        errorPassword.innerHTML = "Password must be 8 or more characters";
         return false;
     }
 }
-function hasSpecialChar(text, errorPWord){
+function hasSpecialChar(text, errorPassword){
     if(text.includes(" ") || text.includes("`") || text.includes("!") ||
     text.includes("@")|| text.includes("#") || text.includes("$") ||
     text.includes("%")|| text.includes("^") || text.includes("&") ||
@@ -92,7 +92,7 @@ function hasSpecialChar(text, errorPWord){
     text.includes("\"")|| text.includes("|") || text.includes(",") ||
     text.includes(".")|| text.includes("<") || text.includes(">") ||
     text.includes("?")|| text.includes("~")){
-        errorPWord.innerHTML = "Password must not contain an special character";
+        errorPassword.innerHTML = "Password must not contain an special character";
         return true;
     }else{
         return false;

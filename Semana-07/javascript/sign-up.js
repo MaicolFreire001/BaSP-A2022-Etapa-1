@@ -265,13 +265,19 @@ window.onload = function() {
         errorEmail.innerHTML = " ";
     }
     password.onblur = function() {
-        if(passwordVerification(password.value, errorPassword)){
-            password.classList.add("green-border");
-            validPassword = true;
+        if(!isEmpty(password.value)){
+            if(passwordVerification(password.value)){
+                password.classList.add("green-border");
+                validPassword = true;
+            }else{
+                password.classList.add("red-border");
+                validPassword = false;
+                errorPassword.innerHTML = "Password must be longer than 8 characters and cannot contain special characters";
+            }
         }else{
             password.classList.add("red-border");
             validPassword = false;
-            errorPassword.innerHTML = "Password must not contain special characters";
+            errorPassword.innerHTML = "Password must not be empty";
         }
     }
     password.onfocus = function() {
@@ -295,7 +301,7 @@ window.onload = function() {
             errorRepeatPassword.innerHTML = "Please enter a valid password first";
         }
     }
-    password.onfocus = function() {
+    repeatPassword.onfocus = function() {
         repeatPassword.classList.remove("green-border");
         repeatPassword.classList.remove("red-border");
         errorRepeatPassword.innerHTML = " ";
@@ -309,7 +315,10 @@ window.onload = function() {
             var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?' + dataToQueryParams(getInputData());
             fetch(url)
             .then( function(res) {
-                return res.json();
+                if(res.ok){
+                    return res.json();
+                }
+                throw new Error(data);
             })
             .then(function(data) {
                 tempDate = data.data.dob.split("/");
@@ -328,17 +337,19 @@ window.onload = function() {
                 alert(error);
             })
         }else{
-            if(!validFirstName) alert("Invalid first name entered");
-            if(!validLastName) alert("Invalid last name entered");
-            if(!validDNI) alert("Invalid DNI entered");
-            if(!validDate) alert("Invalid date of birth entered");
-            if(!validTel) alert("Invalid telephone entered");
-            if(!validAddress) alert("Invalid address entered");
-            if(!validLocality) alert("Invalid locality entered");
-            if(!validPostalCode) alert("Invalid postal code entered");
-            if(!validEmail) alert("Invalid email entered");
-            if(!validPassword) alert("Invalid password entered");
-            if(!validMatchingPassword) alert("Passwords didn't match");
+            var errorAlert = ["Error: "];
+            if(!validFirstName) errorAlert.push("Invalid first name entered");
+            if(!validLastName) errorAlert.push("Invalid last name entered");
+            if(!validDNI) errorAlert.push("Invalid DNI entered");
+            if(!validDate) errorAlert.push("Invalid date of birth entered");
+            if(!validTel) errorAlert.push("Invalid telephone entered");
+            if(!validAddress) errorAlert.push("Invalid address entered");
+            if(!validLocality) errorAlert.push("Invalid locality entered");
+            if(!validPostalCode) errorAlert.push("Invalid postal code entered");
+            if(!validEmail) errorAlert.push("Invalid email entered");
+            if(!validPassword) errorAlert.push("Invalid password entered");
+            if(!validMatchingPassword) errorAlert.push("Passwords didn't match");
+            alert(errorAlert.join("\n"));
         }
     }
 }
@@ -469,11 +480,10 @@ function validateEmail(emailText){
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     return emailExpression.test(emailText);
 }
-function passwordVerification(passwordText, errorPWord){
+function passwordVerification(passwordText, errorPassword){
     if(passwordText.length >= 8){
-        return !hasSpecialChar(passwordText, errorPWord);
+        return !hasSpecialChar(passwordText);
     }else{
-        errorPWord.innerHTML = "Password must be 8 or more characters";
         return false;
     }
 }
