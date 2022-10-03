@@ -3,15 +3,15 @@ var validPassword = false;
 
 window.onload = function() {
     var emailInput = document.getElementById("email");
-    var passwordInput = document.getElementById("password");
+    var password = document.getElementById("password");
     var fieldset = document.getElementsByTagName("fieldset");
-    var errorMail = document.createElement("p");
+    var errorEmail = document.createElement("p");
     var errorPassword = document.createElement("p");
-    errorMail.innerHTML = " ";
+    errorEmail.innerHTML = " ";
     errorPassword.innerHTML = " ";
-    errorMail.classList.add("error-message");
+    errorEmail.classList.add("error-message");
     errorPassword.classList.add("error-message");
-    fieldset[0].appendChild(errorMail);
+    fieldset[0].appendChild(errorEmail);
     fieldset[1].appendChild(errorPassword);
     var sendButton = document.getElementById("submit-button");
 
@@ -22,33 +22,39 @@ window.onload = function() {
         }else{
             emailInput.classList.add("red-border");
             validEmail = false;
-            errorMail.innerHTML = "Invalid email";
+            errorEmail.innerHTML = "Invalid email format";
         }
     }
     emailInput.onfocus = function() {
         emailInput.classList.remove("green-border");
         emailInput.classList.remove("red-border");
-        errorMail.innerHTML = " ";
+        errorEmail.innerHTML = " ";
     }
-    passwordInput.onblur = function() {
-        if(passwordVerification(passwordInput.value, errorPassword)){
-            passwordInput.classList.add("green-border");
-            validPassword = true;
+    password.onblur = function() {
+        if(!isEmpty(password.value)){
+            if(passwordVerification(password.value)){
+                password.classList.add("green-border");
+                validPassword = true;
+            }else{
+                password.classList.add("red-border");
+                validPassword = false;
+                errorPassword.innerHTML = "Password must be longer than 8 characters and cannot contain special characters";
+            }
         }else{
-            passwordInput.classList.add("red-border");
+            password.classList.add("red-border");
             validPassword = false;
-            errorPassword.innerHTML = "Password must not contain special characters";
+            errorPassword.innerHTML = "Password must not be empty";
         }
     }
-    passwordInput.onfocus = function() {
-        passwordInput.classList.remove("green-border");
-        passwordInput.classList.remove("red-border");
+    password.onfocus = function() {
+        password.classList.remove("green-border");
+        password.classList.remove("red-border");
         errorPassword.innerHTML = " ";
     }
     sendButton.onclick = function(event) {
         event.preventDefault();
         if(validEmail && validPassword){
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email='+emailInput.value+'&password='+passwordInput.value)
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email='+emailInput.value+'&password='+password.value)
                 .then( function(res) {
                     if(res.ok){
                         return res.json();
@@ -62,21 +68,27 @@ window.onload = function() {
                     alert(error);
                 })
         }else{
-            if(!validEmail) alert("Invalid email entered");
-            if(!validPassword) alert("Invalid password entered");
+            var errorAlert = ["Error: "];
+            if(!validEmail) errorAlert.push(errorEmail.innerHTML);
+            if(!validPassword) errorAlert.push(errorPassword.innerHTML);
+            alert(errorAlert.join("\n"));
         }
     }
 }
-
+function isEmpty(text){
+    if(text != ""){
+        return false;
+    }
+    return true;
+}
 function validateEmail(emailText){
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     return emailExpression.test(emailText);
 }
 function passwordVerification(passwordText, errorPassword){
     if(passwordText.length >= 8){
-        return !hasSpecialChar(passwordText, errorPassword);
+        return !hasSpecialChar(passwordText);
     }else{
-        errorPassword.innerHTML = "Password must be 8 or more characters";
         return false;
     }
 }
