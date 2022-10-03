@@ -315,18 +315,23 @@ window.onload = function() {
             var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?' + dataToQueryParams(getInputData());
             fetch(url)
             .then( function(res) {
-                if(res.ok){
-                    return res.json();
-                }
-                throw new Error(data);
+                return res.json();
             })
             .then(function(data) {
-                tempDate = data.data.dob.split("/");
-                fixedDate = tempDate[2]+"-"+tempDate[0]+"-"+tempDate[1];
-                var responseData = ["First name: "+data.data.name,"Last name: "+data.data.lastName,"DNI: "+data.data.dni,
-                "Date of birth: "+fixedDate,"Phone: "+data.data.phone,"Address: "+data.data.address,"Locality: "+
-                data.data.city,"Postal code: "+data.data.zip,"Email: "+data.data.email,"Password: "+data.data.password];
-                alert(data.msg + "\n" + responseData.join("\n"));
+                if(data.ok){
+                    tempDate = data.data.dob.split("/");
+                    fixedDate = tempDate[2]+"-"+tempDate[0]+"-"+tempDate[1];
+                    var responseData = ["First name: "+data.data.name,"Last name: "+data.data.lastName,"DNI: "+data.data.dni,
+                    "Date of birth: "+fixedDate,"Phone: "+data.data.phone,"Address: "+data.data.address,"Locality: "+
+                    data.data.city,"Postal code: "+data.data.zip,"Email: "+data.data.email,"Password: "+data.data.password];
+                    alert(data.msg + "\n" + responseData.join("\n"));
+                }else{
+                    var errorsReturned = [" "]
+                    for(var i = 0; i < data.errors.length; i++){
+                        errorsReturned.push(data.errors[i].msg);
+                    }
+                    throw new Error(errorsReturned.join("\n"));
+                }
                 if(responseData.length == keyName.length){
                     for(var i = 0; i < responseData.length; i++){
                         localStorage.setItem(keyName[i],responseData[i].split(":")[1].slice(1));
