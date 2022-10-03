@@ -52,7 +52,7 @@ span{
     font-weight: bold;
 }
 @media(min-width: 1024px){
-    #back-button{
+    #back-menu{
         display: none;
     }
     form div{
