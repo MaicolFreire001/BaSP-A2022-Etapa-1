@@ -9,6 +9,7 @@ form{
 fieldset{
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 fieldset > label{
     text-align: start;
