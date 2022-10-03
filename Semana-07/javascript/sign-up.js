@@ -187,13 +187,13 @@ window.onload = function() {
     }
     address.onblur = function() {
         if(checkLength(address.value, 5)){
-            if(haveLetter(address.value) && haveNumber(address.value) && haveAnSpace(address.value)){
+            if(haveLetter(address.value) && haveNumber(address.value) && haveOnlyOneSpace(address.value)){
                 address.classList.add("green-border");
                 validAddress = true;
             }else{
                 address.classList.add("red-border");
                 validAddress = false;
-                errorAddress.innerHTML = "Address must contain numbers, letters and at least one valid space";
+                errorAddress.innerHTML = "Address must contain numbers, letters and only one blank space";
             }
         }else{
             address.classList.add("red-border");
@@ -317,7 +317,7 @@ window.onload = function() {
                 return res.json();
             })
             .then(function(data) {
-                if(data.ok){
+                if(data.success){
                     tempDate = data.data.dob.split("/");
                     fixedDate = tempDate[2]+"-"+tempDate[0]+"-"+tempDate[1];
                     var responseData = ["First name: "+data.data.name,"Last name: "+data.data.lastName,"DNI: "+data.data.dni,
@@ -326,10 +326,12 @@ window.onload = function() {
                     alert(data.msg + "\n" + responseData.join("\n"));
                 }else{
                     var errorsReturned = [" "]
-                    for(var i = 0; i < data.errors.length; i++){
-                        errorsReturned.push(data.errors[i].msg);
+                    if(data.errors != null){
+                        for(var i = 0; i < data.errors.length; i++){
+                            errorsReturned.push(data.errors[i].msg);
+                        }
+                        throw new Error(errorsReturned.join("\n"));
                     }
-                    throw new Error(errorsReturned.join("\n"));
                 }
                 if(responseData.length == keyName.length){
                     for(var i = 0; i < responseData.length; i++){
@@ -377,6 +379,18 @@ function haveAnSpace(text){
         }
     }
     return false;
+}
+function haveOnlyOneSpace(text){
+    var counter = 0;
+    for(var i = 0; i < text.length; i++){
+        if(text.charAt(i) == " "){
+            if(i == 0){
+                return false;
+            }
+            counter++;
+        }
+    }
+    return counter == 1;
 }
 function onlyLetters(text){
     if(!isEmpty(text)){
@@ -506,7 +520,7 @@ function dataToQueryParams(inputData){
 }
 function loadFields(fields){
     if(localStorage.length > 0){
-        for(var i = 0; i < fields.length-1; i++){
+        for(var i = 0; i < fields.length; i++){
         fields[i].value = localStorage.getItem(keyName[i]);
         fields[i].classList.add("green-border");
         }
@@ -519,5 +533,6 @@ function loadFields(fields){
         validLocality = true;
         validPostalCode = true;
         validEmail = true;
+        validPassword = true;
     }
 }
