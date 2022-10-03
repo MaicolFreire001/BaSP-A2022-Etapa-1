@@ -28,7 +28,6 @@ window.onload = function() {
     var fields = [firstName, lastName, dni, dateOfBirth, telephone, address, locality,
          postalCode, email, password];
 
-    var fieldset = document.getElementsByTagName("fieldset");
     var errorFirstName = document.createElement("p");
     var errorLastName = document.createElement("p");
     var errorDni = document.createElement("p");
@@ -65,17 +64,17 @@ window.onload = function() {
     errorPassword.classList.add("error-message");
     errorRepeatPassword.classList.add("error-message");
 
-    fieldset[0].appendChild(errorFirstName);
-    fieldset[1].appendChild(errorLastName);
-    fieldset[2].appendChild(errorDni);
-    fieldset[3].appendChild(errorDate);
-    fieldset[4].appendChild(errorTel);
-    fieldset[5].appendChild(errorAddress);
-    fieldset[6].appendChild(errorLocality);
-    fieldset[7].appendChild(errorPostalCode);
-    fieldset[8].appendChild(errorEmail);
-    fieldset[9].appendChild(errorPassword);
-    fieldset[10].appendChild(errorRepeatPassword);
+    document.getElementById("fieldsetFirstName").appendChild(errorFirstName);
+    document.getElementById("fieldsetLastName").appendChild(errorLastName);
+    document.getElementById("fieldsetDni").appendChild(errorDni);
+    document.getElementById("fieldsetDob").appendChild(errorDate);
+    document.getElementById("fieldsetTel").appendChild(errorTel);
+    document.getElementById("fieldsetAddress").appendChild(errorAddress);
+    document.getElementById("fieldsetLocality").appendChild(errorLocality);
+    document.getElementById("fieldsetPostalCode").appendChild(errorPostalCode);
+    document.getElementById("fieldsetEmail").appendChild(errorEmail);
+    document.getElementById("fieldsetPassword").appendChild(errorPassword);
+    document.getElementById("fieldsetRepeatPassword").appendChild(errorRepeatPassword);
 
     var sendButton = document.getElementById("submit-button");
 
